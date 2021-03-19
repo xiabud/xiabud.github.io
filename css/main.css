@@ -17,10 +17,10 @@
   --btn-default-hover-bg: #222;
   --btn-default-hover-color: #fff;
   --btn-default-hover-border-color: #222;
-  --highlight-background: #f0f0f0;
-  --highlight-foreground: #444;
-  --highlight-gutter-background: #dedede;
-  --highlight-gutter-foreground: #555;
+  --highlight-background: #fff;
+  --highlight-foreground: #4d4d4c;
+  --highlight-gutter-background: #ededed;
+  --highlight-gutter-foreground: #5e5e5d;
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -42,10 +42,10 @@
     --btn-default-hover-bg: #666;
     --btn-default-hover-color: #ccc;
     --btn-default-hover-border-color: #666;
-    --highlight-background: #1d1f21;
-    --highlight-foreground: #c5c8c6;
-    --highlight-gutter-background: #2d2f31;
-    --highlight-gutter-foreground: #b4b7b5;
+    --highlight-background: #011627;
+    --highlight-foreground: #d6deeb;
+    --highlight-gutter-background: #162a3a;
+    --highlight-gutter-foreground: #c0cad7;
   }
   img {
     opacity: 0.75;
@@ -391,116 +391,12 @@ td {
   top: -5px;
   transform: rotate(-45deg);
 }
-/*
-
-Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
-
-*/
-
-.hljs {
-  display: block;
-  overflow-x: auto;
-  padding: 0.5em;
-  background: #F0F0F0;
-}
-
-
-/* Base color: saturation 0; */
-
-.hljs,
-.hljs-subst {
-  color: #444;
-}
-
-.hljs-comment {
-  color: #888888;
-}
-
-.hljs-keyword,
-.hljs-attribute,
-.hljs-selector-tag,
-.hljs-meta-keyword,
-.hljs-doctag,
-.hljs-name {
-  font-weight: bold;
-}
-
-
-/* User color: hue: 0 */
-
-.hljs-type,
-.hljs-string,
-.hljs-number,
-.hljs-selector-id,
-.hljs-selector-class,
-.hljs-quote,
-.hljs-template-tag,
-.hljs-deletion {
-  color: #880000;
-}
-
-.hljs-title,
-.hljs-section {
-  color: #880000;
-  font-weight: bold;
-}
-
-.hljs-regexp,
-.hljs-symbol,
-.hljs-variable,
-.hljs-template-variable,
-.hljs-link,
-.hljs-selector-attr,
-.hljs-selector-pseudo {
-  color: #BC6060;
-}
-
-
-/* Language color: hue: 90; */
-
-.hljs-literal {
-  color: #78A960;
-}
-
-.hljs-built_in,
-.hljs-bullet,
-.hljs-code,
-.hljs-addition {
-  color: #397300;
-}
-
-
-/* Meta color: hue: 200 */
-
-.hljs-meta {
-  color: #1f7199;
-}
-
-.hljs-meta-string {
-  color: #4d99bf;
-}
-
-
-/* Misc effects */
-
-.hljs-emphasis {
-  font-style: italic;
-}
-
-.hljs-strong {
-  font-weight: bold;
-}
-
-@media (prefers-color-scheme: dark) {
-/* Tomorrow Night Theme */
-/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
-/* Original theme - https://github.com/chriskempson/tomorrow-theme */
 /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
 
 /* Tomorrow Comment */
 .hljs-comment,
 .hljs-quote {
-  color: #969896;
+  color: #8e908c;
 }
 
 /* Tomorrow Red */
@@ -512,7 +408,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 .hljs-selector-class,
 .hljs-regexp,
 .hljs-deletion {
-  color: #cc6666;
+  color: #c82829;
 }
 
 /* Tomorrow Orange */
@@ -524,12 +420,12 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 .hljs-params,
 .hljs-meta,
 .hljs-link {
-  color: #de935f;
+  color: #f5871f;
 }
 
 /* Tomorrow Yellow */
 .hljs-attribute {
-  color: #f0c674;
+  color: #eab700;
 }
 
 /* Tomorrow Green */
@@ -537,26 +433,26 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 .hljs-symbol,
 .hljs-bullet,
 .hljs-addition {
-  color: #b5bd68;
+  color: #718c00;
 }
 
 /* Tomorrow Blue */
 .hljs-title,
 .hljs-section {
-  color: #81a2be;
+  color: #4271ae;
 }
 
 /* Tomorrow Purple */
 .hljs-keyword,
 .hljs-selector-tag {
-  color: #b294bb;
+  color: #8959a8;
 }
 
 .hljs {
   display: block;
   overflow-x: auto;
-  background: #1d1f21;
-  color: #c5c8c6;
+  background: white;
+  color: #4d4d4c;
   padding: 0.5em;
 }
 
@@ -568,6 +464,226 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   font-weight: bold;
 }
 
+@media (prefers-color-scheme: dark) {
+/*
+
+Night Owl for highlight.js (c) Carl Baxter <carl@cbax.tech>
+
+An adaptation of Sarah Drasner's Night Owl VS Code Theme 
+https://github.com/sdras/night-owl-vscode-theme 
+
+Copyright (c) 2018 Sarah Drasner
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #011627;
+  color: #d6deeb;
+}
+
+/* General Purpose */
+.hljs-keyword {
+  color: #c792ea;
+  font-style: italic;
+}
+.hljs-built_in {
+  color: #addb67;
+  font-style: italic;
+}
+.hljs-type {
+  color: #82aaff;
+}
+.hljs-literal {
+  color: #ff5874;
+}
+.hljs-number {
+  color: #F78C6C;
+}
+.hljs-regexp {
+  color: #5ca7e4;
+}
+.hljs-string {
+  color: #ecc48d;
+}
+.hljs-subst {
+  color: #d3423e;
+}
+.hljs-symbol {
+  color: #82aaff;
+}
+.hljs-class {
+  color: #ffcb8b;
+}
+.hljs-function {
+  color: #82AAFF;
+}
+.hljs-title {
+  color: #DCDCAA;
+  font-style: italic;
+}
+.hljs-params {
+  color: #7fdbca;
+}
+
+/* Meta */
+.hljs-comment {
+  color: #637777;
+  font-style: italic;
+}
+.hljs-doctag {
+  color: #7fdbca;
+}
+.hljs-meta {
+  color: #82aaff;
+}
+.hljs-meta-keyword {
+  color: #82aaff;
+}
+.hljs-meta-string {
+  color: #ecc48d;
+}
+
+/* Tags, attributes, config */
+.hljs-section {
+  color: #82b1ff;
+}
+.hljs-tag,
+.hljs-name,
+.hljs-builtin-name {
+  color: #7fdbca;
+}
+.hljs-attr {
+  color: #7fdbca;
+}
+.hljs-attribute {
+  color: #80cbc4;
+}
+.hljs-variable {
+  color: #addb67;
+}
+
+/* Markup */
+.hljs-bullet {
+  color: #d9f5dd;
+}
+.hljs-code {
+  color: #80CBC4;
+}
+.hljs-emphasis {
+  color: #c792ea;
+  font-style: italic;
+}
+.hljs-strong {
+  color: #addb67;
+  font-weight: bold;
+}
+.hljs-formula {
+  color: #c792ea;
+}
+.hljs-link {
+  color: #ff869a;
+}
+.hljs-quote {
+  color: #697098;
+  font-style: italic;
+}
+
+/* CSS */
+.hljs-selector-tag {
+  color: #ff6363;
+}
+
+.hljs-selector-id {
+  color: #fad430;
+}
+
+.hljs-selector-class {
+  color: #addb67;
+  font-style: italic;
+}
+
+.hljs-selector-attr,
+.hljs-selector-pseudo {
+  color: #c792ea;
+  font-style: italic;
+}
+
+/* Templates */
+.hljs-template-tag {
+  color: #c792ea;
+}
+.hljs-template-variable {
+  color: #addb67;
+}
+
+/* diff */
+.hljs-addition {
+  color: #addb67ff;
+  font-style: italic;
+}
+
+.hljs-deletion {
+  color: #EF535090;
+  font-style: italic;
+}
+
+}
+.highlight:hover .copy-btn,
+pre:hover .copy-btn {
+  opacity: 1;
+}
+.copy-btn {
+  color: #333;
+  cursor: pointer;
+  line-height: 1.6;
+  opacity: 0;
+  padding: 2px 6px;
+  position: absolute;
+  transition: opacity 0.2s ease-in-out;
+  color: var(--highlight-foreground);
+  font-size: 14px;
+  right: 0;
+  top: 2px;
+}
+figure.highlight {
+  border-radius: 5px;
+  box-shadow: 0 10px 30px 0 rgba(0,0,0,0.4);
+  padding-top: 30px;
+}
+figure.highlight .table-container {
+  border-radius: 0 0 5px 5px;
+}
+figure.highlight::before {
+  background: #fc625d;
+  box-shadow: 20px 0 #fdbc40, 40px 0 #35cd4b;
+  left: 12px;
+  margin-top: -20px;
+  position: absolute;
+  border-radius: 50%;
+  content: ' ';
+  height: 12px;
+  width: 12px;
 }
 code,
 kbd,
@@ -3023,4 +3139,121 @@ mark.search-keyword {
   .pagination {
     margin-bottom: 10px;
   }
+}
+.index .post-body {
+  text-align: center !important;
+}
+.medium-zoom-image {
+  box-shadow: 0 10px 30px 0px rgba(0,0,0,0.4);
+}
+code {
+  background: #64dfdf;
+  color: #383a42;
+}
+.headband {
+  display: none;
+}
+.footer-inner {
+  color: #07031a;
+}
+::selection {
+  background: rgba(0,149,255,0.2);
+  color: #555;
+}
+::-moz-selection {
+  background: rgba(0,149,255,0.2);
+  color: #555;
+}
+.table-container {
+  scrollbar-width: thin;
+}
+.table-container::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.5em;
+}
+.table-container::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background: #00af91;
+}
+.table-container::-webkit-scrollbar-track {
+  background: none;
+}
+body {
+  background-image: url("https://此处修改为你的背景图片直链");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+@media (max-width: 767px) {
+  body {
+    background-size: auto auto;
+  }
+}
+.main-inner {
+  opacity: 0.95;
+}
+.sidebar {
+  opacity: 0.95;
+}
+@media (prefers-color-scheme: dark) {
+  body .header-inner {
+    margin-top: 18px;
+    background: rgba(51,51,51,0.95);
+  }
+}
+.header-inner {
+  margin-top: 18px;
+  background: rgba(255,255,255,0.95);
+}
+.popup {
+  opacity: 0.95;
+}
+.site-brand-container {
+  background-image: linear-gradient(356deg, #df2650, #e56948, #e8983b, #e7c223);
+}
+.main {
+  margin: 8px auto 0;
+}
+@media (max-width: 767px) {
+  .header {
+    padding: 8px;
+  }
+}
+.header-inner {
+  border-radius: 50px 50px 18px 18px;
+}
+.site-brand-container {
+  border-radius: 18px 18px 0 0;
+}
+@media (max-width: 767px) {
+  .site-brand-container {
+    border-radius: 18px;
+  }
+}
+.sidebar-inner {
+  border-radius: 18px;
+}
+.back-to-top {
+  border-radius: 0 0 18px 18px;
+}
+.post-block {
+  border-radius: 18px !important;
+  margin-top: 18px;
+}
+.pagination {
+  border-radius: 18px !important;
+}
+.comments {
+  border-radius: 18px !important;
+}
+.post-body {
+  font-size: 1em;
+}
+.theme-link {
+  color: #333;
+  border-bottom: 1px solid #333;
+}
+.theme-link:hover {
+  color: #333;
+  border-bottom: 1px solid #333;
 }
