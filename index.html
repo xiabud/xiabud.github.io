@@ -199,7 +199,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">16</span>
+          <span class="site-state-item-count">19</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -260,7 +260,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%AC%E5%8D%81%E5%9B%9B%E5%A4%A9.html">
+    <link itemprop="mainEntityOfPage" href="http://example.com/python%E5%AD%A6%E4%B9%A0%E7%AC%AC%E5%9B%9B%E5%A4%A9%E8%AE%B0%E5%BD%95.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -273,7 +273,120 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%AC%E5%8D%81%E5%9B%9B%E5%A4%A9.html" class="post-title-link" itemprop="url">英语学习第十四天</a>
+          <a href="/python%E5%AD%A6%E4%B9%A0%E7%AC%AC%E5%9B%9B%E5%A4%A9%E8%AE%B0%E5%BD%95.html" class="post-title-link" itemprop="url">python学习Day04</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2021-04-24 19:22:05 / 修改时间：19:26:45" itemprop="dateCreated datePublished" datetime="2021-04-24T19:22:05+08:00">2021-04-24</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/python/" itemprop="url" rel="index"><span itemprop="name">python</span></a>
+        </span>
+    </span>
+
+  
+    <span id="/python%E5%AD%A6%E4%B9%A0%E7%AC%AC%E5%9B%9B%E5%A4%A9%E8%AE%B0%E5%BD%95.html" class="post-meta-item leancloud_visitors" data-flag-title="python学习Day04" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h1><p>变量，其实就是我们生活中起别名和外号，让变量名指向某个值，格式为：【变量名=值】，以后可以通过变量名来操作其对应的值。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">name = <span class="string">&quot;xiabud&quot;</span></span><br><span class="line">print(name)</span><br></pre></td></tr></table></figure>
+
+<p>注意：</p>
+<ul>
+<li><p>给变量赋值age =18</p>
+</li>
+<li><p>age值 age=18</p>
+</li>
+</ul>
+<h2 id="变量名的规范"><a href="#变量名的规范" class="headerlink" title="变量名的规范"></a>变量名的规范</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">age =<span class="number">18</span></span><br><span class="line">name = <span class="string">&quot;alex&quot;</span></span><br><span class="line">flag =<span class="number">1</span> &gt; <span class="number">18</span></span><br><span class="line">address =<span class="string">&quot;北京昌平&quot;</span>+ <span class="string">&quot;沙河&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>三个规范：</p>
+<ul>
+<li>变量名只能由字母、散字、下划线组成.</li>
+<li>不能以字开头</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nagme9 = <span class="string">&quot;alex&quot;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>不能用Python内置的关键字</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">def = &quot;alex&quot;</span><br><span class="line"><span class="keyword">break</span> =<span class="number">123</span></span><br></pre></td></tr></table></figure>
+
+<p>两个建议：</p>
+<ul>
+<li><p>下划线连接命名</p>
+</li>
+<li><p>见名知意</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">xiabud_name = <span class="string">&quot;xiabud&quot;</span></span><br><span class="line">xiabud_sex = <span class="string">&quot;male&quot;</span></span><br><span class="line">xiabud_age = <span class="number">18</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="l练习"><a href="#l练习" class="headerlink" title="l练习"></a>l练习</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">name = <span class="string">&quot;吉诺比利&quot;</span></span><br><span class="line">nameo = <span class="string">&quot;帕克&quot;</span></span><br><span class="line">name_1 = <span class="string">&quot;邓肯&quot;</span></span><br><span class="line">coach = <span class="string">&quot;波波维奇&quot;</span></span><br><span class="line">_ = <span class="string">&quot;卡哇伊&quot;</span></span><br><span class="line">1_year = <span class="string">&quot;1990&quot;</span> <span class="comment">#错误</span></span><br><span class="line">year_1_ = <span class="string">&quot;1990&quot;</span></span><br><span class="line">_1_year = <span class="string">&quot;1990&quot;</span></span><br><span class="line">nba - team = <span class="string">&quot;马刺&quot;</span> <span class="comment">#错误</span></span><br><span class="line">new * name = <span class="string">&quot;伦纳德&quot;</span> <span class="comment">#错误</span></span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/python%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%89%E5%A4%A9%E8%AE%B0%E5%BD%95.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="夏步D">
+      <meta itemprop="description" content="夏步D的博客，分享在编程或者编曲过程中解决问题所产生的心得，分享编程和编曲的文件。同时偶尔感慨生活，谈谈身边的事儿和感受！">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="夏步D的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/python%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%89%E5%A4%A9%E8%AE%B0%E5%BD%95.html" class="post-title-link" itemprop="url">python学习第三天记录</a>
         </h2>
 
         <div class="post-meta-container">
@@ -284,11 +397,11 @@
       </span>
       <span class="post-meta-item-text">发表于</span>
 
-      <time title="创建时间：2021-04-24 16:23:14" itemprop="dateCreated datePublished" datetime="2021-04-24T16:23:14+08:00">2021-04-24</time>
+      <time title="创建时间：2021-04-24 19:21:56" itemprop="dateCreated datePublished" datetime="2021-04-24T19:21:56+08:00">2021-04-24</time>
     </span>
 
   
-    <span id="/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%AC%E5%8D%81%E5%9B%9B%E5%A4%A9.html" class="post-meta-item leancloud_visitors" data-flag-title="英语学习第十四天" title="阅读次数">
+    <span id="/python%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%89%E5%A4%A9%E8%AE%B0%E5%BD%95.html" class="post-meta-item leancloud_visitors" data-flag-title="python学习第三天记录" title="阅读次数">
       <span class="post-meta-item-icon">
         <i class="far fa-eye"></i>
       </span>
@@ -330,7 +443,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%AC%E5%8D%81%E4%B8%89%E5%A4%A9%E8%AE%B0%E5%BD%95.html">
+    <link itemprop="mainEntityOfPage" href="http://example.com/python%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%BA%8C%E5%A4%A9%E8%AE%B0%E5%BD%95.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -343,7 +456,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%AC%E5%8D%81%E4%B8%89%E5%A4%A9%E8%AE%B0%E5%BD%95.html" class="post-title-link" itemprop="url">英语学习第十三天</a>
+          <a href="/python%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%BA%8C%E5%A4%A9%E8%AE%B0%E5%BD%95.html" class="post-title-link" itemprop="url">python学习第二天记录</a>
         </h2>
 
         <div class="post-meta-container">
@@ -355,7 +468,117 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2021-04-24 15:13:48 / 修改时间：16:10:46" itemprop="dateCreated datePublished" datetime="2021-04-24T15:13:48+08:00">2021-04-24</time>
+      <time title="创建时间：2021-04-24 19:21:45 / 修改时间：19:24:18" itemprop="dateCreated datePublished" datetime="2021-04-24T19:21:45+08:00">2021-04-24</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/python/" itemprop="url" rel="index"><span itemprop="name">python</span></a>
+        </span>
+    </span>
+
+  
+    <span id="/python%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%BA%8C%E5%A4%A9%E8%AE%B0%E5%BD%95.html" class="post-meta-item leancloud_visitors" data-flag-title="python学习第二天记录" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="python学习Day02"><a href="#python学习Day02" class="headerlink" title="python学习Day02"></a>python学习Day02</h1><h2 id="数据类型的转换"><a href="#数据类型的转换" class="headerlink" title="数据类型的转换"></a>数据类型的转换</h2><ul>
+<li><p>int，整型定义时，必须是数字且无引号，例如： 5、8、9</p>
+</li>
+<li><p>str，字符串定义时，必须用双引号括起来，例如： “中国”、”武沛齐”、”66”</p>
+</li>
+<li><p>bool，布尔值定义时，只能写True和False</p>
+</li>
+</ul>
+<p>不同的数据类型都有不同的功能，例如：整型可以加减乘除而字符串只能加（拼接）和乘法。如果想要做转换可遵循一个基本规则：想转换什么类型就让他包裹一些。<br>例如：str（666）=“666”是将整型转换为字符串、int（”888”）是将字符串转888。</p>
+<p>转换成整型：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#字符串转换为整型</span></span><br><span class="line">print(<span class="string">&quot;6&quot;</span>+<span class="string">&quot;9&quot;</span>)</span><br><span class="line">print(<span class="built_in">int</span>(<span class="string">&quot;6&quot;</span>)+<span class="built_in">int</span>(<span class="string">&quot;9&quot;</span>))</span><br><span class="line">输出：</span><br><span class="line"><span class="number">69</span></span><br><span class="line"><span class="number">15</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#布尔类型转化成字符串</span></span><br><span class="line"><span class="built_in">int</span>(<span class="literal">True</span>) 转换为<span class="number">1</span></span><br><span class="line"><span class="built_in">int</span>(<span class="literal">False</span>)转换位<span class="number">0</span></span><br></pre></td></tr></table></figure>
+
+<p>字符串转化成int只能是数字字符串（数字加上双引号），文本字符串不能转化成int，否则会报错。</p>
+<p>转换为字符串：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#整型转换为字符串</span></span><br><span class="line"><span class="built_in">str</span>(<span class="number">345</span>)</span><br><span class="line"><span class="built_in">str</span>(<span class="number">666</span>)+<span class="built_in">str</span>(<span class="number">9</span>)</span><br><span class="line"><span class="comment">#结果为“6669”</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#布尔值转换为字符串</span></span><br><span class="line"><span class="built_in">str</span>(<span class="literal">True</span>)</span><br><span class="line"><span class="built_in">str</span>(<span class="literal">False</span>)</span><br><span class="line"></span><br><span class="line">print(<span class="built_in">str</span>(<span class="literal">True</span>))</span><br><span class="line">print(<span class="built_in">str</span>(<span class="literal">False</span>))</span><br><span class="line">输出：</span><br><span class="line"><span class="literal">True</span></span><br><span class="line"><span class="literal">False</span></span><br></pre></td></tr></table></figure>
+
+<p>转换为布尔类型</p>
+<p>所有整型除了0其他数字转换布尔类型皆为True</p>
+<p>所有字符串除了””(空字符串)其他数字转换布尔类型皆为True</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">转换为布尔类型</span><br><span class="line"><span class="comment">#整形转布尔</span></span><br><span class="line"><span class="built_in">bool</span>(<span class="number">1</span>)<span class="literal">True</span></span><br><span class="line"><span class="built_in">bool</span>(<span class="number">2</span>) <span class="literal">True</span></span><br><span class="line"><span class="built_in">bool</span>(<span class="number">0</span>)<span class="literal">False</span></span><br><span class="line"><span class="built_in">bool</span>(-<span class="number">10</span>)<span class="literal">True</span></span><br><span class="line"><span class="comment">#字符串转布尔</span></span><br><span class="line"><span class="built_in">bool</span>(<span class="string">&quot;alex&quot;</span>) <span class="literal">True</span></span><br><span class="line"><span class="built_in">bool</span> ( <span class="string">&quot;砂玻帮你&quot;</span>)<span class="literal">True</span></span><br><span class="line"><span class="built_in">bool</span>(<span class="string">&quot;&quot;</span>)<span class="literal">False</span></span><br><span class="line"><span class="built_in">bool</span> (<span class="string">&quot; &quot;</span>) <span class="literal">True</span> <span class="comment">#哪怕字符串为空格，转换布尔类型都为Ture</span></span><br></pre></td></tr></table></figure>
+
+<p>三句话搞定类型转换：</p>
+<ul>
+<li>其他所有类型转换为布尔类型时，除了空字符串、0以为其他都是True.</li>
+<li>字符串转整形时，只有那种”988”格式的字符串才可以转换为整形，其他都报错。</li>
+<li>想要转换为那种类型，就用这类型的英文包裹一下就行。</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">str</span>(...)</span><br><span class="line"><span class="built_in">int</span>(...)</span><br><span class="line"><span class="built_in">bool</span>(...)</span><br></pre></td></tr></table></figure>
+
+
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%AC%E5%8D%81%E5%9B%9B%E5%A4%A9.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="夏步D">
+      <meta itemprop="description" content="夏步D的博客，分享在编程或者编曲过程中解决问题所产生的心得，分享编程和编曲的文件。同时偶尔感慨生活，谈谈身边的事儿和感受！">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="夏步D的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%AC%E5%8D%81%E5%9B%9B%E5%A4%A9.html" class="post-title-link" itemprop="url">英语单词背诵Day13</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2021-04-24 16:23:14 / 修改时间：19:17:50" itemprop="dateCreated datePublished" datetime="2021-04-24T16:23:14+08:00">2021-04-24</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -368,7 +591,7 @@
     </span>
 
   
-    <span id="/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%AC%E5%8D%81%E4%B8%89%E5%A4%A9%E8%AE%B0%E5%BD%95.html" class="post-meta-item leancloud_visitors" data-flag-title="英语学习第十三天" title="阅读次数">
+    <span id="/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%AC%E5%8D%81%E5%9B%9B%E5%A4%A9.html" class="post-meta-item leancloud_visitors" data-flag-title="英语单词背诵Day13" title="阅读次数">
       <span class="post-meta-item-icon">
         <i class="far fa-eye"></i>
       </span>
@@ -385,30 +608,104 @@
     
     <div class="post-body" itemprop="articleBody">
           <h2 id="今天单词"><a href="#今天单词" class="headerlink" title="今天单词"></a>今天单词</h2><blockquote>
-<h3 id="list12"><a href="#list12" class="headerlink" title="list12"></a>list12</h3><p>conceal             隐藏，隐瞒<br>recreational        娱乐的，消遣的<br>rotate              旋转，循环<br>devote              致力于，奉献于<br>conservation        保存，保持，保护<br>dumb                哑的，不说话的<br>disability          残疾，无能，无资格<br>charity             慈善，施舍<br>plant               种植，工厂，植物，发电厂<br>young               年轻的，初期的<br>especially          尤其<br>vital               至关重要的<br>crucial             重要的<br>optical             官学的，视觉的，眼镜的<br>abrupt              突然的，声音的<br>excel               超过，擅长<br>rib                 排骨，肋骨<br>curb                控制，勒住<br>swift               迅速的，敏捷的<br>elastic             有弹性的<br>intensify           增强，强化<br>yield               产量，屈服，顺从<br>fortnight           两星期<br>inclusive           包含的，包括的<br>disintegrate        分解，碎裂<br>party               政党，党派，派对<br>cathedral           大教堂<br>church              教堂<br>assess              评定，估价<br>attention           注意力，关心<br>bound               跳跃，弹起<br>alter               改变，更改<br>continent           大洲，大陆<br>linger              停留，徘徊<br>patent              专利权，专利的<br>software            软件<br>theory              理论，学说<br>friction            摩擦，不和<br>beach               海滩，湖滨<br>seek                寻找，寻求，探索<br>backward            向后的，倒退<br>petty               琐碎的，小气的，小规模的<br>liability           责任，债务<br>aspect              方面，方向<br>refine              净化，提纯<br>tobacco             香烟<br>generate            发生，使形成<br>chart               图表，图纸<br>fleet               舰队，船队；敏捷的<br>recipient           接受者，容纳者<br>obstacle            障碍，妨碍物<br>barber              理发师<br>deliver             交付，传送，递送<br>toss                投掷，颠簸<br>fare                路费，交通费，进展<br>afraid              害怕的<br>face                脸<br>debt                债务，罪过<br>diary               日记<br>glacier             冰川，冰河<br>irrational          不合理的<br>butterfly           蝴蝶<br>competent           胜任的，有能力的<br>chase               追逐，奔跑<br>propose             建议<br>justice             正义，公平，司法<br>transmit            传输，传播，发射<br>dread               恐惧，害怕的人<br>convey              传送，运输<br>present             现在，礼物，出席<br>sincere             真挚的，真诚的<br>gender              性别，产生<br>whip                鞭子，抽打<br>convert             使转变，转换<br>indeed              确实，真正地</p>
-</blockquote>
-<hr>
-<h2 id="重复记忆签到表格"><a href="#重复记忆签到表格" class="headerlink" title="重复记忆签到表格"></a>重复记忆签到表格</h2><table>
-<thead>
-<tr>
-<th align="center">日期</th>
-<th align="center">再次记忆</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">2021年4月11日</td>
-<td align="center">√</td>
-</tr>
-<tr>
-<td align="center">2021年4月19日</td>
-<td align="center">√</td>
-</tr>
-<tr>
-<td align="center">2021年4月21日</td>
-<td align="center">√</td>
-</tr>
-</tbody></table>
+<h3 id="list13"><a href="#list13" class="headerlink" title="list13"></a>list13</h3><p>decade          十年<br>city            城市<br>citizen         公民，市民，老百姓<br>active          积极地，活跃的<br>reply           回复，答复<br>suspicious      可疑的，怀疑的
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%AC%E5%8D%81%E5%9B%9B%E5%A4%A9.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
 
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%AC%E5%8D%81%E4%B8%89%E5%A4%A9%E8%AE%B0%E5%BD%95.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="夏步D">
+      <meta itemprop="description" content="夏步D的博客，分享在编程或者编曲过程中解决问题所产生的心得，分享编程和编曲的文件。同时偶尔感慨生活，谈谈身边的事儿和感受！">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="夏步D的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%AC%E5%8D%81%E4%B8%89%E5%A4%A9%E8%AE%B0%E5%BD%95.html" class="post-title-link" itemprop="url">英语单词背诵Day12</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2021-04-24 15:13:48 / 修改时间：16:36:42" itemprop="dateCreated datePublished" datetime="2021-04-24T15:13:48+08:00">2021-04-24</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E8%8B%B1%E8%AF%AD/" itemprop="url" rel="index"><span itemprop="name">英语</span></a>
+        </span>
+    </span>
+
+  
+    <span id="/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%AC%E5%8D%81%E4%B8%89%E5%A4%A9%E8%AE%B0%E5%BD%95.html" class="post-meta-item leancloud_visitors" data-flag-title="英语单词背诵Day12" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="今天单词"><a href="#今天单词" class="headerlink" title="今天单词"></a>今天单词</h2><blockquote>
+<h3 id="list12"><a href="#list12" class="headerlink" title="list12"></a>list12</h3><p>conceal             隐藏，隐瞒<br>recreational        娱乐的，消遣的<br>rotate              旋转，循环<br>devote              致力于，奉献于<br>conservation        保存，保持，保护<br>dumb                哑的，不说话的
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%AC%E5%8D%81%E4%B8%89%E5%A4%A9%E8%AE%B0%E5%BD%95.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -874,296 +1171,6 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%80%E5%A4%A9%E8%AE%B0%E5%BD%95.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/python%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%80%E5%A4%A9%E8%AE%B0%E5%BD%95.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="夏步D">
-      <meta itemprop="description" content="夏步D的博客，分享在编程或者编曲过程中解决问题所产生的心得，分享编程和编曲的文件。同时偶尔感慨生活，谈谈身边的事儿和感受！">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="夏步D的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/python%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%80%E5%A4%A9%E8%AE%B0%E5%BD%95.html" class="post-title-link" itemprop="url">python学习Day01</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2021-03-30 10:18:05 / 修改时间：10:39:21" itemprop="dateCreated datePublished" datetime="2021-03-30T10:18:05+08:00">2021-03-30</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/python/" itemprop="url" rel="index"><span itemprop="name">python</span></a>
-        </span>
-    </span>
-
-  
-    <span id="/python%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%80%E5%A4%A9%E8%AE%B0%E5%BD%95.html" class="post-meta-item leancloud_visitors" data-flag-title="python学习Day01" title="阅读次数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-eye"></i>
-      </span>
-      <span class="post-meta-item-text">阅读次数：</span>
-      <span class="leancloud-visitors-count"></span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="python输出语法"><a href="#python输出语法" class="headerlink" title="python输出语法"></a>python输出语法</h2><h3 id="将结果或者内容呈现给用户"><a href="#将结果或者内容呈现给用户" class="headerlink" title="将结果或者内容呈现给用户"></a>将结果或者内容呈现给用户</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">&quot;Hellow world&quot;</span>)</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/python%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%80%E5%A4%A9%E8%AE%B0%E5%BD%95.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%AC%E5%85%AB%E5%A4%A9%E8%AE%B0%E5%BD%95.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="夏步D">
-      <meta itemprop="description" content="夏步D的博客，分享在编程或者编曲过程中解决问题所产生的心得，分享编程和编曲的文件。同时偶尔感慨生活，谈谈身边的事儿和感受！">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="夏步D的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%AC%E5%85%AB%E5%A4%A9%E8%AE%B0%E5%BD%95.html" class="post-title-link" itemprop="url">英语单词背诵Day08</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2021-03-16 21:14:52" itemprop="dateCreated datePublished" datetime="2021-03-16T21:14:52+08:00">2021-03-16</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-04-24 10:10:35" itemprop="dateModified" datetime="2021-04-24T10:10:35+08:00">2021-04-24</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E8%8B%B1%E8%AF%AD/" itemprop="url" rel="index"><span itemprop="name">英语</span></a>
-        </span>
-    </span>
-
-  
-    <span id="/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%AC%E5%85%AB%E5%A4%A9%E8%AE%B0%E5%BD%95.html" class="post-meta-item leancloud_visitors" data-flag-title="英语单词背诵Day08" title="阅读次数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-eye"></i>
-      </span>
-      <span class="post-meta-item-text">阅读次数：</span>
-      <span class="leancloud-visitors-count"></span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="今天单词"><a href="#今天单词" class="headerlink" title="今天单词"></a>今天单词</h2><blockquote>
-<h3 id="list08"><a href="#list08" class="headerlink" title="list08"></a>list08</h3><ul>
-<li>shallow         浅的；肤浅的</li>
-<li>formula         公式；配方，准则</li>
-<li>fry             油炸，煎；油炸食品</li>
-<li>calorie         卡路里</li>
-<li>appreciate      欣赏，感激</li>
-<li>novel           新奇的，异常的
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%AC%E5%85%AB%E5%A4%A9%E8%AE%B0%E5%BD%95.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%83%E5%A4%A9%E8%AE%B0%E5%BD%95.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="夏步D">
-      <meta itemprop="description" content="夏步D的博客，分享在编程或者编曲过程中解决问题所产生的心得，分享编程和编曲的文件。同时偶尔感慨生活，谈谈身边的事儿和感受！">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="夏步D的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%83%E5%A4%A9%E8%AE%B0%E5%BD%95.html" class="post-title-link" itemprop="url">英语单词背诵Day07</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2021-03-15 21:14:33" itemprop="dateCreated datePublished" datetime="2021-03-15T21:14:33+08:00">2021-03-15</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-04-24 10:10:32" itemprop="dateModified" datetime="2021-04-24T10:10:32+08:00">2021-04-24</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E8%8B%B1%E8%AF%AD/" itemprop="url" rel="index"><span itemprop="name">英语</span></a>
-        </span>
-    </span>
-
-  
-    <span id="/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%83%E5%A4%A9%E8%AE%B0%E5%BD%95.html" class="post-meta-item leancloud_visitors" data-flag-title="英语单词背诵Day07" title="阅读次数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-eye"></i>
-      </span>
-      <span class="post-meta-item-text">阅读次数：</span>
-      <span class="leancloud-visitors-count"></span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="今天单词"><a href="#今天单词" class="headerlink" title="今天单词"></a>今天单词</h2><blockquote>
-<h3 id="list07"><a href="#list07" class="headerlink" title="list07"></a>list07</h3><ul>
-<li>doctor               医生；教授</li>
-<li>skyhigh             极高的；水平高的</li>
-<li>slave                 奴隶</li>
-<li>compatible             兼容的；能共处的</li>
-<li>tour                 旅行</li>
-<li>timid                 胆小的；害羞的
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%83%E5%A4%A9%E8%AE%B0%E5%BD%95.html#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
