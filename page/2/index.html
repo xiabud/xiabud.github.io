@@ -199,20 +199,20 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">27</span>
+          <span class="site-state-item-count">26</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -251,121 +251,6 @@
 
 
     <div class="main-inner index posts-expand">
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/python%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%BA%8C%E5%A4%A9%E8%AE%B0%E5%BD%95.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="夏步D">
-      <meta itemprop="description" content="夏步D的博客，分享在编程或者编曲过程中解决问题所产生的心得，分享编程和编曲的文件。同时偶尔感慨生活，谈谈身边的事儿和感受！">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="夏步D的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/python%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%BA%8C%E5%A4%A9%E8%AE%B0%E5%BD%95.html" class="post-title-link" itemprop="url">python学习Day02</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2021-04-24 19:21:45" itemprop="dateCreated datePublished" datetime="2021-04-24T19:21:45+08:00">2021-04-24</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-07-11 11:22:00" itemprop="dateModified" datetime="2021-07-11T11:22:00+08:00">2021-07-11</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/python/" itemprop="url" rel="index"><span itemprop="name">python</span></a>
-        </span>
-    </span>
-
-  
-    <span id="/python%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%BA%8C%E5%A4%A9%E8%AE%B0%E5%BD%95.html" class="post-meta-item leancloud_visitors" data-flag-title="python学习Day02" title="阅读次数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-eye"></i>
-      </span>
-      <span class="post-meta-item-text">阅读次数：</span>
-      <span class="leancloud-visitors-count"></span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="python学习Day02"><a href="#python学习Day02" class="headerlink" title="python学习Day02"></a>python学习Day02</h1><h2 id="数据类型的转换"><a href="#数据类型的转换" class="headerlink" title="数据类型的转换"></a>数据类型的转换</h2><ul>
-<li><p>int，整型定义时，必须是数字且无引号，例如： 5、8、9</p>
-</li>
-<li><p>str，字符串定义时，必须用双引号括起来，例如： “中国”、”武沛齐”、”66”</p>
-</li>
-<li><p>bool，布尔值定义时，只能写True和False</p>
-</li>
-</ul>
-<p>不同的数据类型都有不同的功能，例如：整型可以加减乘除而字符串只能加（拼接）和乘法。如果想要做转换可遵循一个基本规则：想转换什么类型就让他包裹一些。<br>例如：str（666）=“666”是将整型转换为字符串、int（”888”）是将字符串转888。</p>
-<p>转换成整型：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#字符串转换为整型</span></span><br><span class="line">print(<span class="string">&quot;6&quot;</span>+<span class="string">&quot;9&quot;</span>)</span><br><span class="line">print(<span class="built_in">int</span>(<span class="string">&quot;6&quot;</span>)+<span class="built_in">int</span>(<span class="string">&quot;9&quot;</span>))</span><br><span class="line">输出：</span><br><span class="line"><span class="number">69</span></span><br><span class="line"><span class="number">15</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#布尔类型转化成字符串</span></span><br><span class="line"><span class="built_in">int</span>(<span class="literal">True</span>) 转换为<span class="number">1</span></span><br><span class="line"><span class="built_in">int</span>(<span class="literal">False</span>)转换位<span class="number">0</span></span><br></pre></td></tr></table></figure>
-
-<p>字符串转化成int只能是数字字符串（数字加上双引号），文本字符串不能转化成int，否则会报错。</p>
-<p>转换为字符串：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#整型转换为字符串</span></span><br><span class="line"><span class="built_in">str</span>(<span class="number">345</span>)</span><br><span class="line"><span class="built_in">str</span>(<span class="number">666</span>)+<span class="built_in">str</span>(<span class="number">9</span>)</span><br><span class="line"><span class="comment">#结果为“6669”</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#布尔值转换为字符串</span></span><br><span class="line"><span class="built_in">str</span>(<span class="literal">True</span>)</span><br><span class="line"><span class="built_in">str</span>(<span class="literal">False</span>)</span><br><span class="line"></span><br><span class="line">print(<span class="built_in">str</span>(<span class="literal">True</span>))</span><br><span class="line">print(<span class="built_in">str</span>(<span class="literal">False</span>))</span><br><span class="line">输出：</span><br><span class="line"><span class="literal">True</span></span><br><span class="line"><span class="literal">False</span></span><br></pre></td></tr></table></figure>
-
-<p>转换为布尔类型</p>
-<p>所有整型除了0其他数字转换布尔类型皆为True</p>
-<p>所有字符串除了””(空字符串)其他数字转换布尔类型皆为True</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">转换为布尔类型</span><br><span class="line"><span class="comment">#整形转布尔</span></span><br><span class="line"><span class="built_in">bool</span>(<span class="number">1</span>)<span class="literal">True</span></span><br><span class="line"><span class="built_in">bool</span>(<span class="number">2</span>) <span class="literal">True</span></span><br><span class="line"><span class="built_in">bool</span>(<span class="number">0</span>)<span class="literal">False</span></span><br><span class="line"><span class="built_in">bool</span>(-<span class="number">10</span>)<span class="literal">True</span></span><br><span class="line"><span class="comment">#字符串转布尔</span></span><br><span class="line"><span class="built_in">bool</span>(<span class="string">&quot;alex&quot;</span>) <span class="literal">True</span></span><br><span class="line"><span class="built_in">bool</span> ( <span class="string">&quot;砂玻帮你&quot;</span>)<span class="literal">True</span></span><br><span class="line"><span class="built_in">bool</span>(<span class="string">&quot;&quot;</span>)<span class="literal">False</span></span><br><span class="line"><span class="built_in">bool</span> (<span class="string">&quot; &quot;</span>) <span class="literal">True</span> <span class="comment">#哪怕字符串为空格，转换布尔类型都为Ture</span></span><br></pre></td></tr></table></figure>
-
-<p>三句话搞定类型转换：</p>
-<ul>
-<li>其他所有类型转换为布尔类型时，除了空字符串、0以为其他都是True.</li>
-<li>字符串转整形时，只有那种”988”格式的字符串才可以转换为整形，其他都报错。</li>
-<li>想要转换为那种类型，就用这类型的英文包裹一下就行。</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">str</span>(...)</span><br><span class="line"><span class="built_in">int</span>(...)</span><br><span class="line"><span class="built_in">bool</span>(...)</span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
 
     
 
@@ -1206,6 +1091,107 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%AC%E5%85%AB%E5%A4%A9%E8%AE%B0%E5%BD%95.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%83%E5%A4%A9%E8%AE%B0%E5%BD%95.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="夏步D">
+      <meta itemprop="description" content="夏步D的博客，分享在编程或者编曲过程中解决问题所产生的心得，分享编程和编曲的文件。同时偶尔感慨生活，谈谈身边的事儿和感受！">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="夏步D的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%83%E5%A4%A9%E8%AE%B0%E5%BD%95.html" class="post-title-link" itemprop="url">英语单词背诵Day07</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-03-15 21:14:33" itemprop="dateCreated datePublished" datetime="2021-03-15T21:14:33+08:00">2021-03-15</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-04-24 10:10:32" itemprop="dateModified" datetime="2021-04-24T10:10:32+08:00">2021-04-24</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E8%8B%B1%E8%AF%AD/" itemprop="url" rel="index"><span itemprop="name">英语</span></a>
+        </span>
+    </span>
+
+  
+    <span id="/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%83%E5%A4%A9%E8%AE%B0%E5%BD%95.html" class="post-meta-item leancloud_visitors" data-flag-title="英语单词背诵Day07" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="今天单词"><a href="#今天单词" class="headerlink" title="今天单词"></a>今天单词</h2><blockquote>
+<h3 id="list07"><a href="#list07" class="headerlink" title="list07"></a>list07</h3><ul>
+<li>doctor               医生；教授</li>
+<li>skyhigh             极高的；水平高的</li>
+<li>slave                 奴隶</li>
+<li>compatible             兼容的；能共处的</li>
+<li>tour                 旅行</li>
+<li>timid                 胆小的；害羞的
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%83%E5%A4%A9%E8%AE%B0%E5%BD%95.html#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>

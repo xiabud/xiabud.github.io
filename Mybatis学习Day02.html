@@ -23,19 +23,23 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","version":"8.2.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":false,"lazyload":false,"nav":null},"motion":{"enable":true,"async":true,"transition":{"post_block":"bounceln","post_header":"shake","post_body":"pulse","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
-<meta name="description" content="夏步D的博客，分享在编程或者编曲过程中解决问题所产生的心得，分享编程和编曲的文件。同时偶尔感慨生活，谈谈身边的事儿和感受！">
-<meta property="og:type" content="website">
-<meta property="og:title" content="夏步D的博客">
-<meta property="og:url" content="http://example.com/archives/2021/04/index.html">
+<meta name="description" content="占位符占位符的格式为：#&amp;#123;&amp;#125;，表示从java程序中传入过来的数据。 将com&#x2F;xienode&#x2F;dao&#x2F;StudentDao.xml的查询语句修改为如下： 123&lt;select id&#x3D;&quot;selectStudentById&quot; resultType&#x3D;&quot;com.xienode.domain.Student&quot;&gt;select id,nam">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Mybatis学习Day02">
+<meta property="og:url" content="http://example.com/Mybatis%E5%AD%A6%E4%B9%A0Day02.html">
 <meta property="og:site_name" content="夏步D的博客">
-<meta property="og:description" content="夏步D的博客，分享在编程或者编曲过程中解决问题所产生的心得，分享编程和编曲的文件。同时偶尔感慨生活，谈谈身边的事儿和感受！">
+<meta property="og:description" content="占位符占位符的格式为：#&amp;#123;&amp;#125;，表示从java程序中传入过来的数据。 将com&#x2F;xienode&#x2F;dao&#x2F;StudentDao.xml的查询语句修改为如下： 123&lt;select id&#x3D;&quot;selectStudentById&quot; resultType&#x3D;&quot;com.xienode.domain.Student&quot;&gt;select id,nam">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/images/image-20210723211017900.png">
+<meta property="article:published_time" content="2021-07-24T01:50:50.000Z">
+<meta property="article:modified_time" content="2021-07-24T01:54:55.114Z">
 <meta property="article:author" content="夏步D">
 <meta property="article:tag" content="Music production, Orchestration, Synthesizer, Programming, java, web">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/images/image-20210723211017900.png">
 
 
-<link rel="canonical" href="http://example.com/archives/2021/04/">
+<link rel="canonical" href="http://example.com/Mybatis%E5%AD%A6%E4%B9%A0Day02.html">
 
 
 <script class="page-configurations">
@@ -43,11 +47,11 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
-<title>归档 | 夏步D的博客</title>
+<title>Mybatis学习Day02 | 夏步D的博客</title>
   
 
 
@@ -172,7 +176,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -185,6 +189,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%A0%E4%BD%8D%E7%AC%A6"><span class="nav-number">1.</span> <span class="nav-text">占位符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#mybatis%E6%97%A5%E5%BF%97"><span class="nav-number">2.</span> <span class="nav-text">mybatis日志</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -250,233 +255,109 @@
 </noscript>
 
 
-    <div class="main-inner archive posts-collapse">
+    <div class="main-inner post posts-expand">
 
 
   
-  
-  
-  <div class="post-block">
-    <div class="post-content">
-      <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共计 26 篇日志。 继续努力。</span>
-      </div>
 
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/Mybatis%E5%AD%A6%E4%B9%A0Day02.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="夏步D">
+      <meta itemprop="description" content="夏步D的博客，分享在编程或者编曲过程中解决问题所产生的心得，分享编程和编曲的文件。同时偶尔感慨生活，谈谈身边的事儿和感受！">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="夏步D的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Mybatis学习Day02
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
       
-    <div class="collection-year">
-      <span class="collection-header">2021</span>
+
+      <time title="创建时间：2021-07-24 09:50:50 / 修改时间：09:54:55" itemprop="dateCreated datePublished" datetime="2021-07-24T09:50:50+08:00">2021-07-24</time>
+    </span>
+
+  
+    <span id="/Mybatis%E5%AD%A6%E4%B9%A0Day02.html" class="post-meta-item leancloud_visitors" data-flag-title="Mybatis学习Day02" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h2 id="占位符"><a href="#占位符" class="headerlink" title="占位符"></a>占位符</h2><p>占位符的格式为：<code>#&#123;&#125;</code>，表示从java程序中传入过来的数据。</p>
+<p>将com/xienode/dao/StudentDao.xml的查询语句修改为如下：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;selectStudentById&quot;</span> <span class="attr">resultType</span>=<span class="string">&quot;com.xienode.domain.Student&quot;</span>&gt;</span></span><br><span class="line">select id,name,email,age from student where id= #&#123;StudentId&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+<p>在MyTest.java中添加测试：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">TestSelectStudentById2</span><span class="params">()</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line"></span><br><span class="line">    String config=<span class="string">&quot;mybatis.xml&quot;</span>;</span><br><span class="line"></span><br><span class="line">    InputStream inputStream = Resources.getResourceAsStream(config);</span><br><span class="line"></span><br><span class="line">    SqlSessionFactory factory = <span class="keyword">new</span> SqlSessionFactoryBuilder().build(inputStream);</span><br><span class="line"></span><br><span class="line">    SqlSession session = factory.openSession();</span><br><span class="line"></span><br><span class="line">    String sqlId = <span class="string">&quot;com.xienode.dao.StudentDao&quot;</span>+<span class="string">&quot;.&quot;</span>+<span class="string">&quot;selectStudentById&quot;</span>;</span><br><span class="line"></span><br><span class="line">    Student student = session.selectOne(sqlId,<span class="number">1002</span>);</span><br><span class="line">    System.out.println(<span class="string">&quot;使用mybatis查询一个学生&quot;</span>+student);</span><br><span class="line"></span><br><span class="line">    session.close();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>修改完成之后，<code>Student student = session.selectOne(sqlId,1002);</code>的“1002”值会替换查询语句占位符的#{StudentId}。</p>
+<h2 id="mybatis日志"><a href="#mybatis日志" class="headerlink" title="mybatis日志"></a>mybatis日志</h2><p>Mybatis 通过使用内置的日志工厂提供日志功能。内置日志工厂将会把日志工作委托给 下面的实现之一：</p>
+<p> • SLF4J</p>
+<p> • Apache Commons Logging</p>
+<p> • Log4j 2</p>
+<p> • Log4j </p>
+<p>• JDK logging</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--设置日志--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">settings</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">setting</span> <span class="attr">name</span>=<span class="string">&quot;logImpl&quot;</span> <span class="attr">value</span>=<span class="string">&quot;STDOUT_LOGGING&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">settings</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<img src="images/image-20210723211017900.png" alt="日志的元素解释">
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-04-28T16:34:37+08:00"
-              content="2021-04-28">
-          04-28
-        </time>
-      </div>
+    
+    
+    
 
-      <div class="post-title">
-          <a class="post-title-link" href="/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%AC%E5%8D%81%E4%B9%9D%E5%A4%A9%E8%AE%B0%E5%BD%95.html" itemprop="url">
-            <span itemprop="name">英语学习第十九天记录</span>
-          </a>
-      </div>
+    <footer class="post-footer">
 
-      
-    </header>
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/Mybatis%E5%AD%A6%E4%B9%A0Day01.html" rel="prev" title="Mybatis学习Day01">
+                  <i class="fa fa-chevron-left"></i> Mybatis学习Day01
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
   </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-04-28T16:16:16+08:00"
-              content="2021-04-28">
-          04-28
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%AC%E5%8D%81%E5%85%AB%E5%A4%A9%E8%AE%B0%E5%BD%95.html" itemprop="url">
-            <span itemprop="name">英语学习第十八天记录</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-04-28T16:16:06+08:00"
-              content="2021-04-28">
-          04-28
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%AC%E5%8D%81%E4%B8%83%E5%A4%A9%E8%AE%B0%E5%BD%95.html" itemprop="url">
-            <span itemprop="name">英语学习第十七天记录</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-04-28T16:15:58+08:00"
-              content="2021-04-28">
-          04-28
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%AC%E5%8D%81%E5%85%AD%E5%A4%A9%E8%AE%B0%E5%BD%95.html" itemprop="url">
-            <span itemprop="name">英语学习第十六天记录</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-04-28T16:15:29+08:00"
-              content="2021-04-28">
-          04-28
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%AC%E5%8D%81%E4%BA%94%E5%A4%A9%E8%AE%B0%E5%BD%95.html" itemprop="url">
-            <span itemprop="name">英语学习第十五天记录</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-04-24T19:22:05+08:00"
-              content="2021-04-24">
-          04-24
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/python%E5%AD%A6%E4%B9%A0%E7%AC%AC%E5%9B%9B%E5%A4%A9%E8%AE%B0%E5%BD%95.html" itemprop="url">
-            <span itemprop="name">python学习Day04</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-04-24T19:21:56+08:00"
-              content="2021-04-24">
-          04-24
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/python%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%89%E5%A4%A9%E8%AE%B0%E5%BD%95.html" itemprop="url">
-            <span itemprop="name">python学习Day03</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-04-24T19:21:45+08:00"
-              content="2021-04-24">
-          04-24
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/python%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%BA%8C%E5%A4%A9%E8%AE%B0%E5%BD%95.html" itemprop="url">
-            <span itemprop="name">python学习Day02</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-04-24T16:23:14+08:00"
-              content="2021-04-24">
-          04-24
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%AC%E5%8D%81%E5%9B%9B%E5%A4%A9%E8%AE%B0%E5%BD%95.html" itemprop="url">
-            <span itemprop="name">英语单词背诵Day14</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-04-24T15:13:48+08:00"
-              content="2021-04-24">
-          04-24
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%AC%E5%8D%81%E4%B8%89%E5%A4%A9%E8%AE%B0%E5%BD%95.html" itemprop="url">
-            <span itemprop="name">英语单词背诵Day13</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
+</div>
 
 
-    </div>
-  </div>
-  
-  
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/archives/2021/04/page/2/">2</a><a class="extend next" rel="next" href="/archives/2021/04/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
-  </nav>
 
+
+
+
+    <div class="comments" id="lv-container" data-id="city" data-uid="MTAyMC81Mjk5Ny8yOTQ3Mw=="></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -649,6 +530,21 @@ setInterval("createtime()",250);
 
 
 
+<script>
+NexT.utils.loadComments('#lv-container', () => {
+  window.livereOptions = {
+    refer: "Mybatis学习Day02.html"
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+});
+</script>
 
 </body>
 </html>

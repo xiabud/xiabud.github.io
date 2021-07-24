@@ -199,20 +199,20 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">27</span>
+          <span class="site-state-item-count">26</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -260,6 +260,87 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/Mybatis%E5%AD%A6%E4%B9%A0Day02.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="夏步D">
+      <meta itemprop="description" content="夏步D的博客，分享在编程或者编曲过程中解决问题所产生的心得，分享编程和编曲的文件。同时偶尔感慨生活，谈谈身边的事儿和感受！">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="夏步D的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/Mybatis%E5%AD%A6%E4%B9%A0Day02.html" class="post-title-link" itemprop="url">Mybatis学习Day02</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2021-07-24 09:50:50 / 修改时间：09:54:55" itemprop="dateCreated datePublished" datetime="2021-07-24T09:50:50+08:00">2021-07-24</time>
+    </span>
+
+  
+    <span id="/Mybatis%E5%AD%A6%E4%B9%A0Day02.html" class="post-meta-item leancloud_visitors" data-flag-title="Mybatis学习Day02" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="占位符"><a href="#占位符" class="headerlink" title="占位符"></a>占位符</h2><p>占位符的格式为：<code>#&#123;&#125;</code>，表示从java程序中传入过来的数据。</p>
+<p>将com/xienode/dao/StudentDao.xml的查询语句修改为如下：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;selectStudentById&quot;</span> <span class="attr">resultType</span>=<span class="string">&quot;com.xienode.domain.Student&quot;</span>&gt;</span></span><br><span class="line">select id,name,email,age from student where id= #&#123;StudentId&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/Mybatis%E5%AD%A6%E4%B9%A0Day02.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="http://example.com/Mybatis%E5%AD%A6%E4%B9%A0Day01.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -291,8 +372,17 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-07-23 23:01:27" itemprop="dateModified" datetime="2021-07-23T23:01:27+08:00">2021-07-23</time>
+        <time title="修改时间：2021-07-24 09:42:12" itemprop="dateModified" datetime="2021-07-24T09:42:12+08:00">2021-07-24</time>
       </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/mybatis/" itemprop="url" rel="index"><span itemprop="name">mybatis</span></a>
+        </span>
+    </span>
 
   
     <span id="/Mybatis%E5%AD%A6%E4%B9%A0Day01.html" class="post-meta-item leancloud_visitors" data-flag-title="Mybatis学习Day01" title="阅读次数">
@@ -311,81 +401,18 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="mybatis框架"><a href="#mybatis框架" class="headerlink" title="mybatis框架"></a>mybatis框架</h1><h2 id="第一章-框架的概述"><a href="#第一章-框架的概述" class="headerlink" title="第一章 框架的概述"></a>第一章 框架的概述</h2><h3 id="1-三层架构"><a href="#1-三层架构" class="headerlink" title="1.三层架构"></a>1.三层架构</h3><p>mvc:web开发中，使用mvc架构模式。m：数据，V：视图，C：控制器。</p>
+          <h2 id="第一章-框架的概述"><a href="#第一章-框架的概述" class="headerlink" title="第一章 框架的概述"></a>第一章 框架的概述</h2><h3 id="三层架构"><a href="#三层架构" class="headerlink" title="三层架构"></a>三层架构</h3><p>mvc:web开发中，使用mvc架构模式。m：数据，V：视图，C：控制器。</p>
 <p>c控制器：接收请求，调用service对象，显示请求的处理结果。当前使用servlet作为控制器。</p>
 <p>V视图：现在使用jsp，html，css，js。显示请求的处理结果，把m中数据显示出来。</p>
 <p>m数据：来自数据库mysql，来自文件，来自网络。</p>
-<p>mvc作用：</p>
-<p>1）实现解耦合。</p>
-<p>2）让mvc各负其职。</p>
-<p>3）使的系统扩展更好。更容易维护。</p>
-<p>三层架构:</p>
-<p>1.界面层 (视图层) :接收用户的请求, 调用service，显示请求的处理结果的。 包含了jsp, html, servlet等对象。对应的包controller。</p>
-<p>2.业务逻辑层:处理业务逻辑，使用算法处理数据的。 把数据返回给界面层。 对应的是service包， 和包中的很多的XXXService类。例如:StudentService，OrderService, ShopService</p>
-<p>3.持久层(数据库访问层) :访问数据库,或者读取文件，访问网络。获取数据。对应的包是dao。 dao包中很多的StudentDao, OrderDao, ShopDao等等。</p>
-<h3 id="2-三层架构的请求流程"><a href="#2-三层架构的请求流程" class="headerlink" title="2.三层架构的请求流程"></a>2.三层架构的请求流程</h3><p>用户发起请求—&gt;界面层—&gt;业务逻辑层—&gt;持久层—&gt;数据库(mysql)</p>
-<p><img src="C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20210712214841384.png" alt="image-20210712214841384"></p>
-<h3 id="3-为什么要使用三层"><a href="#3-为什么要使用三层" class="headerlink" title="3.为什么要使用三层"></a>3.为什么要使用三层</h3><p>1，结构清晰、耦合度低,各层分工明确</p>
-<p>2，可维护性高，可扩展性高.</p>
-<p>3，有利于标准化</p>
-<p>4，开发人员可以只关注整个结构中的其中某-层的功能实现</p>
-<p>5，有利于各层逻辑的复用</p>
-<h3 id="4-三层架构模式与框架"><a href="#4-三层架构模式与框架" class="headerlink" title="4.三层架构模式与框架"></a>4.三层架构模式与框架</h3><p>每一层对应着一个框架</p>
-<ol>
-<li><p>界面层–SpringMVC框架</p>
-</li>
-<li><p>业务层–Spring框架</p>
-</li>
-<li><p>持久层–MyBatis框架</p>
-</li>
-</ol>
-<h3 id="5-框架"><a href="#5-框架" class="headerlink" title="5.框架"></a>5.框架</h3><p>1)什么是框架(framework)</p>
-<p>​   框架:就是一个软件，完成了部分的功能。软件中的类和类之间的方法调用都已经规定好了。 通过这些可以完成某些功能。框架看做是模版。</p>
-<p>​   框架是可以升级的，改造的。框架是安全的。</p>
-<p>​   框架是对某一个方面有用的, 不是全能的。</p>
-<h3 id="6-框架解决的问题"><a href="#6-框架解决的问题" class="headerlink" title="6.框架解决的问题"></a>6.框架解决的问题</h3><p>1)框架能实现技术的整合。</p>
-<p>2)提供开发的效率。降低难度。</p>
-<h3 id="7-jdbc访问数据库的优缺点"><a href="#7-jdbc访问数据库的优缺点" class="headerlink" title="7.jdbc访问数据库的优缺点"></a>7.jdbc访问数据库的优缺点</h3><p>优点:</p>
-<p>1.直观，好理解</p>
-<p>缺点:</p>
-<p>1.创建很多对象Connection ,Statement, ResultSet</p>
-<p>2.注册驱动</p>
-<p>3.执行sql语句</p>
-<p>4.把ResultSet转为Student，List集合。</p>
-<p>5.关闭资源</p>
-<p>6.sql语句和业务逻辑代码混在一起</p>
-<h3 id="8-mybatis框架"><a href="#8-mybatis框架" class="headerlink" title="8.mybatis框架"></a>8.mybatis框架</h3><p>什么是mybatis框架:是一个持久层框架， 原名是ibatis， 2013改名为 MyBatis. MyBatis可以操作数据库， 对数据执<br>行增删改查。看做是高级的jdbc。 解决jdbc的缺点。</p>
-<p>mybatis能做什么?</p>
-<p>1)注册驱动。</p>
-<p>2)创建jdbc中使用的Connection， Statement, ResultSet。</p>
-<p>3)执行sql语句， 得到ResultSet。</p>
-<p>4)处理ResultSet， 把记录集中的数据转为java对象， 同时还能把java对象放入到List集合。</p>
-<p>5)关闭资源。</p>
-<p>6)实现sql语句和java代码的解耦合。</p>
-<h2 id="第二章-MyBatis入门"><a href="#第二章-MyBatis入门" class="headerlink" title="第二章 MyBatis入门"></a>第二章 MyBatis入门</h2><h3 id="1-第一个例子"><a href="#1-第一个例子" class="headerlink" title="1.第一个例子"></a>1.第一个例子</h3><p>实现步骤:</p>
-<h4 id="0-创建student表-id-name-email-age"><a href="#0-创建student表-id-name-email-age" class="headerlink" title="0.创建student表(id, name, email, age)"></a>0.创建student表(id, name, email, age)</h4><h4 id="1-新建maven项目"><a href="#1-新建maven项目" class="headerlink" title="1.新建maven项目"></a>1.新建maven项目</h4><h4 id="2-修改pom-xml"><a href="#2-修改pom-xml" class="headerlink" title="2.修改pom.xml"></a>2.修改pom.xml</h4><p>​       1)加入依赖mybatis依赖，mysql驱动， junit</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">properties</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">project.build.sourceEncoding</span>&gt;</span>UTF-8<span class="tag">&lt;/<span class="name">project.build.sourceEncoding</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">maven.compiler.source</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">maven.compiler.source</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">maven.compiler.target</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">maven.compiler.target</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">properties</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--依赖列表--&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--mybatis依赖--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.mybatis<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mybatis<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.5.1<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!--mysql驱动--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>mysql<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mysql-connector-java<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">version</span>&gt;</span>5.1.9<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--    单元测试--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>junit<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>junit<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">version</span>&gt;</span>4.11<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">scope</span>&gt;</span>test<span class="tag">&lt;/<span class="name">scope</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>​       2)在<build>加入资源插件</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">&lt;!--资源插件：处理src/main/java目录中的xml--&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">resources</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">resource</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">directory</span>&gt;</span>src/main/java<span class="tag">&lt;/<span class="name">directory</span>&gt;</span><span class="comment">&lt;!--所在的目录--&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">includes</span>&gt;</span><span class="comment">&lt;!--包括目录下的.properties.xml 文件都会扫描到--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">include</span>&gt;</span>**/*.properties<span class="tag">&lt;/<span class="name">include</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">include</span>&gt;</span>**/*.xml<span class="tag">&lt;/<span class="name">include</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">includes</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">filtering</span>&gt;</span>false<span class="tag">&lt;/<span class="name">filtering</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">resource</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">resources</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="3-创建实体类Student。定义属性，属性名和列名保持一致。（创建domain文件，domain文件下创建Student-java文件-kind为class。）"><a href="#3-创建实体类Student。定义属性，属性名和列名保持一致。（创建domain文件，domain文件下创建Student-java文件-kind为class。）" class="headerlink" title="3.创建实体类Student。定义属性，属性名和列名保持一致。（创建domain文件，domain文件下创建Student.java文件 kind为class。）"></a>3.创建实体类Student。定义属性，属性名和列名保持一致。（创建domain文件，domain文件下创建Student.java文件 kind为class。）</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*属性名和列名保持一致*/</span></span><br><span class="line"><span class="keyword">private</span> Integer id;</span><br><span class="line"><span class="keyword">private</span> String name;</span><br><span class="line"><span class="keyword">private</span> String email;</span><br><span class="line"><span class="keyword">private</span> Integer age;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> Integer <span class="title">getId</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> id;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setId</span><span class="params">(Integer id)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.id = id;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> String <span class="title">getName</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> name;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setName</span><span class="params">(String name)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.name = name;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> String <span class="title">getEmail</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> email;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setEmail</span><span class="params">(String email)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.email = email;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> Integer <span class="title">getAge</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> age;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setAge</span><span class="params">(Integer age)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.age = age;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;学生实体类信息&#123;&quot;</span> +</span><br><span class="line">            <span class="string">&quot;id=&quot;</span> + id +</span><br><span class="line">            <span class="string">&quot;, name=&#x27;&quot;</span> + name + <span class="string">&#x27;\&#x27;&#x27;</span> +</span><br><span class="line">            <span class="string">&quot;, email=&#x27;&quot;</span> + email + <span class="string">&#x27;\&#x27;&#x27;</span> +</span><br><span class="line">            <span class="string">&quot;, age=&quot;</span> + age +</span><br><span class="line">            <span class="string">&#x27;&#125;&#x27;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="4-创建Dao接口，定义操作数据库的方法。（创建Dao文件，再创建一个为DaoStudent-java的文件：kind为interface。）"><a href="#4-创建Dao接口，定义操作数据库的方法。（创建Dao文件，再创建一个为DaoStudent-java的文件：kind为interface。）" class="headerlink" title="4.创建Dao接口，定义操作数据库的方法。（创建Dao文件，再创建一个为DaoStudent.java的文件：kind为interface。）"></a>4.创建Dao接口，定义操作数据库的方法。（创建Dao文件，再创建一个为DaoStudent.java的文件：kind为interface。）</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//查询一个学生</span></span><br><span class="line"><span class="function">Student <span class="title">selectStudentById</span><span class="params">(Integer id)</span></span>;</span><br></pre></td></tr></table></figure>
-
-<h4 id="5-创建xml文件-mapper文件-，写sql语句。"><a href="#5-创建xml文件-mapper文件-，写sql语句。" class="headerlink" title="5.创建xml文件(mapper文件) ，写sql语句。"></a>5.创建xml文件(mapper文件) ，写sql语句。</h4><p>​       mybatis框架推荐是把sql语句和java代码分开</p>
-<p>​       mapper文件:定义和dao接口在同一目录，一个表一个mapper文件。（在Dao文件中再创建一个为StudentDao.xml文件）</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">mapper</span></span></span><br><span class="line"><span class="meta">        <span class="meta-keyword">PUBLIC</span> <span class="meta-string">&quot;-//mybatis.org//DTD Mapper 3.0//EN&quot;</span></span></span><br><span class="line"><span class="meta">        <span class="meta-string">&quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">mapper</span> <span class="attr">namespace</span>=<span class="string">&quot;com.xienode.dao.StudentDao&quot;</span>&gt;</span></span><br><span class="line">    </span><br><span class="line">        <span class="comment">&lt;!--查询一个学生Student--&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;selectStudentById&quot;</span> <span class="attr">resultType</span>=<span class="string">&quot;com.xienode.domain.Student&quot;</span>&gt;</span></span><br><span class="line">    /*id:执行sql语句的唯一标识，是一个自定义字符串，推荐使用Dao接口的方法名。*/</span><br><span class="line">    /*resultType：告诉mybatis，执行sql语句，把数据赋值给哪个类型的java对象*/</span><br><span class="line">    /*resultType的值现在使用java对象的全限定名称*/</span><br><span class="line">        select id,name,email,age from student where id=1001</span><br><span class="line">    <span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mapper</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--</span></span><br><span class="line"><span class="comment"> 1.http://mybatis.org/dtd/mybatis-3-mapper.dtd是约束文件</span></span><br><span class="line"><span class="comment"> 约束文件的作用：定义和限制当前文件中可以使用的标签和属性，以及标签出现的顺序。</span></span><br><span class="line"><span class="comment"> 2.mapper是根标签，namespace：命名空间，不能为空，唯一值。</span></span><br><span class="line"><span class="comment">    推荐使用Dao接口的全限定名称。</span></span><br><span class="line"><span class="comment">    作用：参与识别sql语句的作用。</span></span><br><span class="line"><span class="comment"> 3.在mapper里面可以写&lt;insert&gt;,&lt;update&gt;,&lt;delete&gt;,&lt;select&gt;等标签。</span></span><br><span class="line"><span class="comment">    标签里边是对应的语句。</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="6-创建mybatis的主配置文件。（在resources目录-下创建mybatis-xml文件。）"><a href="#6-创建mybatis的主配置文件。（在resources目录-下创建mybatis-xml文件。）" class="headerlink" title="6.创建mybatis的主配置文件。（在resources目录 下创建mybatis.xml文件。）"></a>6.创建mybatis的主配置文件。（在resources目录 下创建mybatis.xml文件。）</h4><p>​       1)定义创建连接实例的数据源(DataSource) 对象</p>
-<p>​       2)指定其他mapper文件的位置</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">configuration</span></span></span><br><span class="line"><span class="meta">        <span class="meta-keyword">PUBLIC</span> <span class="meta-string">&quot;-//mybatis.org//DTD Config 3.0//EN&quot;</span></span></span><br><span class="line"><span class="meta">        <span class="meta-string">&quot;http://mybatis.org/dtd/mybatis-3-config.dtd&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--设置日志--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">settings</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">setting</span> <span class="attr">name</span>=<span class="string">&quot;logImpl&quot;</span> <span class="attr">value</span>=<span class="string">&quot;STDOUT_LOGGING&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">settings</span>&gt;</span></span><br><span class="line">    </span><br><span class="line">    <span class="tag">&lt;<span class="name">environments</span> <span class="attr">default</span>=<span class="string">&quot;development&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">environment</span> <span class="attr">id</span>=<span class="string">&quot;development&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">transactionManager</span> <span class="attr">type</span>=<span class="string">&quot;JDBC&quot;</span>/&gt;</span></span><br><span class="line"></span><br><span class="line">            <span class="comment">&lt;!--配置数据源，创建connection对象--&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">dataSource</span> <span class="attr">type</span>=<span class="string">&quot;POOLED&quot;</span>&gt;</span></span><br><span class="line">                <span class="comment">&lt;!--driver：配置驱动的内容--&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;driver&quot;</span> <span class="attr">value</span>=<span class="string">&quot;com.mysql.jdbc.Driver&quot;</span>/&gt;</span></span><br><span class="line">                <span class="comment">&lt;!--连接数据库的url--&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;url&quot;</span> <span class="attr">value</span>=<span class="string">&quot;jdbc:mysql://localhost:3306/springdb&quot;</span>/&gt;</span></span><br><span class="line">                <span class="comment">&lt;!--用户名--&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;username&quot;</span> <span class="attr">value</span>=<span class="string">&quot;root&quot;</span>/&gt;</span></span><br><span class="line">                <span class="comment">&lt;!--密码--&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;password&quot;</span> <span class="attr">value</span>=<span class="string">&quot;admin&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">dataSource</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">environment</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">environments</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mappers</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!--使用mapper的resource属性指定mapper文件的路径</span></span><br><span class="line"><span class="comment">            这个路径是从target/classes路径开始的</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">            俊用注意：</span></span><br><span class="line"><span class="comment">            resoruce-&quot;mapper文件的路径，使用/分割路径”</span></span><br><span class="line"><span class="comment">            一个mapper resource指定一个mapper文件</span></span><br><span class="line"><span class="comment">            --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mapper</span> <span class="attr">resource</span>=<span class="string">&quot;com/xienode/dao/StudentDao.xml&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">mappers</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>（10） 创建测试类 。（在src/test/java/com/xienode/目录下创建 MyTest.java 文件，kind为Class。）</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyTest</span> </span>&#123;</span><br><span class="line">    <span class="comment">//测试mybatis执行sql语句</span></span><br><span class="line">    <span class="meta">@Test</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">TestSelectStudentById</span><span class="params">()</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">        <span class="comment">//调用mybatis中的某个对象的方法，来执行mapper文件中的sql语句</span></span><br><span class="line">        <span class="comment">//mybatis核心类：sqlSessionFactory</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">//1.定义mybatis主配置文件的位置，从类路径开始的相对路径</span></span><br><span class="line">        String config=<span class="string">&quot;mybatis.xml&quot;</span>;</span><br><span class="line">        <span class="comment">//2.读取主配置文件，使用mybatis框架中的resources类</span></span><br><span class="line">        InputStream inputStream = Resources.getResourceAsStream(config);</span><br><span class="line">        <span class="comment">//3.创建sqlSessionFactory对象，使用sqlSessionFactoryBuilder类</span></span><br><span class="line">        SqlSessionFactory factory = <span class="keyword">new</span> SqlSessionFactoryBuilder().build(inputStream);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//4.获取SqlSession对象</span></span><br><span class="line">        SqlSession session = factory.openSession();</span><br><span class="line"></span><br><span class="line">        <span class="comment">//5.指定要执行的sql语句的标识id</span></span><br><span class="line">        <span class="comment">// sql的id = namespace+&quot;.&quot;+&lt;select&gt;\&lt;insert&gt;标签的id属性值</span></span><br><span class="line">        String sqlId = <span class="string">&quot;com.xienode.dao.StudentDao&quot;</span>+<span class="string">&quot;.&quot;</span>+<span class="string">&quot;selectStudentById&quot;</span>;</span><br><span class="line">        <span class="comment">//6.通过SqlSession的方法，执行sql语句</span></span><br><span class="line">        Student student = session.selectOne(sqlId);</span><br><span class="line">        System.out.println(<span class="string">&quot;使用mybatis查询一个学生&quot;</span>+student);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//7.关闭SqlSession对象</span></span><br><span class="line">        session.close();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-mybatis概念"><a href="#2-mybatis概念" class="headerlink" title="2.mybatis概念"></a>2.mybatis概念</h3><h4 id="1-自动提交"><a href="#1-自动提交" class="headerlink" title="1.自动提交"></a>1.自动提交</h4><p>当你的sql语句执行完毕后，提交事务。数据库更新操作之间保存到数据库。</p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/Mybatis%E5%AD%A6%E4%B9%A0Day01.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -442,7 +469,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-07-11 11:21:58" itemprop="dateModified" datetime="2021-07-11T11:21:58+08:00">2021-07-11</time>
+        <time title="修改时间：2021-07-24 09:39:27" itemprop="dateModified" datetime="2021-07-24T09:39:27+08:00">2021-07-24</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -472,30 +499,16 @@
     
     <div class="post-body" itemprop="articleBody">
           <h2 id="今天单词"><a href="#今天单词" class="headerlink" title="今天单词"></a>今天单词</h2><blockquote>
-<h3 id="list18"><a href="#list18" class="headerlink" title="list18"></a>list18</h3><p>assist<br>help<br>disapprove<br>purify<br>gloomy<br>sad<br>complicated<br>innovate<br>public<br>tutor<br>supervisor<br>federal<br>committee<br>contradict<br>roughly<br>apart<br>banner<br>cite<br>predator<br>concept<br>prohibit<br>stop<br>dove<br>exclaim<br>involve<br>possess<br>spoil<br>file<br>dim<br>engineer<br>ease<br>ecology<br>counsel<br>percent<br>distant<br>wise<br>army<br>juvenile<br>credit<br>absolute<br>minister<br>confuse<br>agent<br>finger<br>costume<br>crew<br>craft<br>hospital<br>doom<br>expose<br>maintain<br>restructure<br>trumpet<br>shave<br>flame<br>exist<br>regard<br>rent<br>turtle<br>muscle<br>transistor<br>preach<br>arrive<br>invariably<br>heroine<br>respective<br>major<br>gear<br>commission<br>room<br>science<br>bold</p>
+<h3 id="list18"><a href="#list18" class="headerlink" title="list18"></a>list18</h3><p>assist<br>help<br>disapprove<br>purify<br>gloomy<br>sad</p>
 </blockquote>
-<hr>
-<h2 id="重复记忆签到表格"><a href="#重复记忆签到表格" class="headerlink" title="重复记忆签到表格"></a>重复记忆签到表格</h2><table>
-<thead>
-<tr>
-<th align="center">日期</th>
-<th align="center">再次记忆</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">2021年4月11日</td>
-<td align="center">√</td>
-</tr>
-<tr>
-<td align="center">2021年4月19日</td>
-<td align="center">√</td>
-</tr>
-<tr>
-<td align="center">2021年4月21日</td>
-<td align="center">√</td>
-</tr>
-</tbody></table>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%AC%E5%8D%81%E4%B9%9D%E5%A4%A9%E8%AE%B0%E5%BD%95.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -552,7 +565,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-07-11 11:21:52" itemprop="dateModified" datetime="2021-07-11T11:21:52+08:00">2021-07-11</time>
+        <time title="修改时间：2021-07-24 09:39:23" itemprop="dateModified" datetime="2021-07-24T09:39:23+08:00">2021-07-24</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -582,30 +595,16 @@
     
     <div class="post-body" itemprop="articleBody">
           <h2 id="今天单词"><a href="#今天单词" class="headerlink" title="今天单词"></a>今天单词</h2><blockquote>
-<h3 id="list17"><a href="#list17" class="headerlink" title="list17"></a>list17</h3><p>faith<br>economy<br>capacity<br>capable<br>persist<br>insist<br>brand<br>opposite<br>clown<br>needy<br>poor<br>beg<br>surrender<br>bend<br>succumb<br>deem<br>sip<br>union<br>brief<br>elbow<br>formal<br>mobile<br>fly<br>deck<br>vitamin<br>corner<br>ankle<br>identical<br>inquiry<br>bell<br>recover<br>repair<br>exploit<br>pierce<br>approximate<br>maid<br>commence<br>dean<br>ocean<br>splash<br>absent<br>chorus<br>period<br>trip<br>bureau<br>result<br>deal<br>poll<br>share<br>anxious<br>overburden<br>clarity<br>insight<br>librarian<br>advisable<br>apology<br>recession<br>catch<br>hydrogen<br>immigrant<br>bone<br>restrain<br>defence<br>disable<br>extinguish<br>infer<br>safe<br>draft<br>inherit<br>injury<br>feasible<br>except<br>bad<br>colony</p>
+<h3 id="list17"><a href="#list17" class="headerlink" title="list17"></a>list17</h3><p>faith<br>economy<br>capacity<br>capable<br>persist<br>insist</p>
 </blockquote>
-<hr>
-<h2 id="重复记忆签到表格"><a href="#重复记忆签到表格" class="headerlink" title="重复记忆签到表格"></a>重复记忆签到表格</h2><table>
-<thead>
-<tr>
-<th align="center">日期</th>
-<th align="center">再次记忆</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">2021年4月11日</td>
-<td align="center">√</td>
-</tr>
-<tr>
-<td align="center">2021年4月19日</td>
-<td align="center">√</td>
-</tr>
-<tr>
-<td align="center">2021年4月21日</td>
-<td align="center">√</td>
-</tr>
-</tbody></table>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%AC%E5%8D%81%E5%85%AB%E5%A4%A9%E8%AE%B0%E5%BD%95.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -662,7 +661,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-07-11 11:21:59" itemprop="dateModified" datetime="2021-07-11T11:21:59+08:00">2021-07-11</time>
+        <time title="修改时间：2021-07-24 09:39:28" itemprop="dateModified" datetime="2021-07-24T09:39:28+08:00">2021-07-24</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -692,30 +691,16 @@
     
     <div class="post-body" itemprop="articleBody">
           <h2 id="今天单词"><a href="#今天单词" class="headerlink" title="今天单词"></a>今天单词</h2><blockquote>
-<h3 id="list16"><a href="#list16" class="headerlink" title="list16"></a>list16</h3><p>lifespan<br>mortal<br>valuable<br>attainment<br>patrol<br>betray<br>disclose<br>access<br>dig<br>madden<br>bible<br>coal<br>condense<br>greenhouse<br>brisk<br>blossom<br>grocery<br>coarse<br>dare<br>frown<br>biscuit<br>cave<br>plate<br>convention<br>tax<br>decline<br>decrease<br>drop<br>refuse<br>reject<br>license<br>commitment<br>chef<br>merchant<br>velocity<br>export<br>apply<br>lord<br>visit<br>recite<br>cafe<br>relevant<br>cotton<br>eliminate<br>factor<br>fund<br>combine<br>disappoint<br>fulfill<br>disaster<br>clarify<br>ceremony<br>constitute<br>attitude<br>altitude<br>install<br>garage<br>lung<br>racket<br>forecast<br>panel<br>talent<br>crop<br>berry<br>lump<br>deer<br>flee<br>mercury<br>deprive<br>bulletin<br>blind<br>revise<br>lecture<br>prove<br>welfare<br>cognitive<br>spread<br>alphabet<br>ray<br>choke<br>integrate<br>workshop<br>onion</p>
+<h3 id="list16"><a href="#list16" class="headerlink" title="list16"></a>list16</h3><p>lifespan<br>mortal<br>valuable<br>attainment<br>patrol<br>betray</p>
 </blockquote>
-<hr>
-<h2 id="重复记忆签到表格"><a href="#重复记忆签到表格" class="headerlink" title="重复记忆签到表格"></a>重复记忆签到表格</h2><table>
-<thead>
-<tr>
-<th align="center">日期</th>
-<th align="center">再次记忆</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">2021年4月11日</td>
-<td align="center">√</td>
-</tr>
-<tr>
-<td align="center">2021年4月19日</td>
-<td align="center">√</td>
-</tr>
-<tr>
-<td align="center">2021年4月21日</td>
-<td align="center">√</td>
-</tr>
-</tbody></table>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%AC%E5%8D%81%E4%B8%83%E5%A4%A9%E8%AE%B0%E5%BD%95.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -772,7 +757,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-07-11 11:21:58" itemprop="dateModified" datetime="2021-07-11T11:21:58+08:00">2021-07-11</time>
+        <time title="修改时间：2021-07-24 09:39:24" itemprop="dateModified" datetime="2021-07-24T09:39:24+08:00">2021-07-24</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -802,30 +787,16 @@
     
     <div class="post-body" itemprop="articleBody">
           <h2 id="今天单词"><a href="#今天单词" class="headerlink" title="今天单词"></a>今天单词</h2><blockquote>
-<h3 id="list15"><a href="#list15" class="headerlink" title="list15"></a>list15</h3><p>steady<br>escape<br>origin<br>bacterium<br>disease<br>explosion<br>appear<br>dispose<br>billion<br>distress<br>authority<br>analyze<br>solve<br>compute<br>suppose<br>extreme<br>maximum<br>minimum<br>refrain<br>legal<br>cart<br>worth<br>detect<br>turkey<br>cottage<br>procession<br>myth<br>appeal<br>author<br>skin<br>restrict<br>relate<br>chimne<br>discard<br>tend<br>thesis<br>pose<br>bridegroom<br>paralyze<br>staff<br>stuff<br>volume<br>manufacture<br>remote<br>gradual<br>candle<br>angle<br>wrinkle<br>exit<br>religion<br>coach<br>evolve<br>surgery<br>passive<br>function<br>doubt<br>deed<br>invitation<br>blank<br>chance<br>conscience<br>platform<br>impose<br>fine<br>element<br>freight<br>data<br>headline<br>meltdown<br>destination</p>
+<h3 id="list15"><a href="#list15" class="headerlink" title="list15"></a>list15</h3><p>steady<br>escape<br>origin<br>bacterium<br>disease<br>explosion</p>
 </blockquote>
-<hr>
-<h2 id="重复记忆签到表格"><a href="#重复记忆签到表格" class="headerlink" title="重复记忆签到表格"></a>重复记忆签到表格</h2><table>
-<thead>
-<tr>
-<th align="center">日期</th>
-<th align="center">再次记忆</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">2021年4月11日</td>
-<td align="center">√</td>
-</tr>
-<tr>
-<td align="center">2021年4月19日</td>
-<td align="center">√</td>
-</tr>
-<tr>
-<td align="center">2021年4月21日</td>
-<td align="center">√</td>
-</tr>
-</tbody></table>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%AC%E5%8D%81%E5%85%AD%E5%A4%A9%E8%AE%B0%E5%BD%95.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -882,7 +853,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-07-11 11:21:59" itemprop="dateModified" datetime="2021-07-11T11:21:59+08:00">2021-07-11</time>
+        <time title="修改时间：2021-07-24 09:39:19" itemprop="dateModified" datetime="2021-07-24T09:39:19+08:00">2021-07-24</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -912,30 +883,16 @@
     
     <div class="post-body" itemprop="articleBody">
           <h2 id="今天单词"><a href="#今天单词" class="headerlink" title="今天单词"></a>今天单词</h2><blockquote>
-<h3 id="list14"><a href="#list14" class="headerlink" title="list14"></a>list14</h3><p>tame        驯服的，驯养<br>lack        缺乏，不足<br>specific    特殊的，明确的<br>anxiety     焦虑的<br>damage      伤害<br>curse       咒骂，诅咒<br>drawback    缺点，不利条件<br>shortcoming 缺点，短处<br>flaw        瑕疵，缺点<br>relentless  无情的，残酷的<br>commit      犯罪<br>convict     证明。。有罪，犯罪<br>relieve     解除，减轻，使放心<br>available   有空的，可获得的<br>inevitable  必然的，不可避免的<br>unavoidable 不可避免的<br>enemy       敌人，敌军<br>schem       计划，组合，图谋<br>rank        排名，等级，把。。。。分等<br>dignity     尊严，高贵<br>rival       竞争的，竞争对手<br>policy      政策，方针<br>neglect     忽略，忽视<br>sew<br>funeral<br>blade<br>breast<br>token<br>heap<br>general<br>fold<br>generous<br>squeeze<br>dropout<br>axis<br>dorm<br>confirm<br>typically<br>arise<br>zone<br>discover<br>burden<br>concentrate<br>earn<br>insult<br>compress<br>artificial<br>mist<br>detail<br>standard<br>deficient<br>defy<br>worsen<br>adapt<br>approve<br>harvest<br>dismiss<br>oven<br>reputation<br>influence<br>expressway<br>lorry<br>glimpse<br>fruss<br>drain<br>significant<br>occur<br>blend<br>process<br>hinder<br>clumsy<br>electricity<br>harbour<br>plough<br>biography<br>magnificent<br>realm<br>jewel<br>bounce<br>content<br>clone</p>
+<h3 id="list14"><a href="#list14" class="headerlink" title="list14"></a>list14</h3><p>tame        驯服的，驯养<br>lack        缺乏，不足<br>specific    特殊的，明确的<br>anxiety     焦虑的<br>damage      伤害<br>curse       咒骂，诅咒</p>
 </blockquote>
-<hr>
-<h2 id="重复记忆签到表格"><a href="#重复记忆签到表格" class="headerlink" title="重复记忆签到表格"></a>重复记忆签到表格</h2><table>
-<thead>
-<tr>
-<th align="center">日期</th>
-<th align="center">再次记忆</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">2021年4月11日</td>
-<td align="center">√</td>
-</tr>
-<tr>
-<td align="center">2021年4月19日</td>
-<td align="center">√</td>
-</tr>
-<tr>
-<td align="center">2021年4月21日</td>
-<td align="center">√</td>
-</tr>
-</tbody></table>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%AC%E5%8D%81%E4%BA%94%E5%A4%A9%E8%AE%B0%E5%BD%95.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -1073,10 +1030,16 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2021-04-24 19:21:56 / 修改时间：19:32:58" itemprop="dateCreated datePublished" datetime="2021-04-24T19:21:56+08:00">2021-04-24</time>
+      <time title="创建时间：2021-04-24 19:21:56" itemprop="dateCreated datePublished" datetime="2021-04-24T19:21:56+08:00">2021-04-24</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-07-24 09:39:29" itemprop="dateModified" datetime="2021-07-24T09:39:29+08:00">2021-07-24</time>
+      </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-folder"></i>
@@ -1113,98 +1076,6 @@
             </div>
           <!--/noindex-->
         
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/python%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%89%E5%A4%A9%E8%AE%B0%E5%BD%95.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="夏步D">
-      <meta itemprop="description" content="夏步D的博客，分享在编程或者编曲过程中解决问题所产生的心得，分享编程和编曲的文件。同时偶尔感慨生活，谈谈身边的事儿和感受！">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="夏步D的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/python%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%89%E5%A4%A9%E8%AE%B0%E5%BD%95.html" class="post-title-link" itemprop="url">python学习Day03</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2021-04-24 19:21:56" itemprop="dateCreated datePublished" datetime="2021-04-24T19:21:56+08:00">2021-04-24</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-07-11 11:22:00" itemprop="dateModified" datetime="2021-07-11T11:22:00+08:00">2021-07-11</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/python/" itemprop="url" rel="index"><span itemprop="name">python</span></a>
-        </span>
-    </span>
-
-  
-    <span id="/python%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%89%E5%A4%A9%E8%AE%B0%E5%BD%95.html" class="post-meta-item leancloud_visitors" data-flag-title="python学习Day03" title="阅读次数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-eye"></i>
-      </span>
-      <span class="post-meta-item-text">阅读次数：</span>
-      <span class="leancloud-visitors-count"></span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="练习题"><a href="#练习题" class="headerlink" title="练习题"></a>练习题</h1><p>1.计算整型50乘以10再除以5的商并使用print输出。<br>2.判断整型8是否大于10的结果并使用print输出。<br>3.计算整型30除以2得到的余数并使用print输出。<br>4.使用字符串乘法实现把字符串”我爱我的祖国”创建三遍并拼接起来最终使用print输出。<br>5.判断字符串”wupeiq”和”alex”是否相等的结果并使用print输出。<br>6.判断整型666和整型666是否相等的结果并使用print输出。<br>7.判断字符串”666”和整型666是否相等的结果并使用print输出。<br>8.看代码写结果（禁止运行代码）</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span> ( <span class="built_in">int</span> (<span class="string">&quot;100&quot;</span>)*<span class="number">3</span> )</span><br><span class="line">print( <span class="built_in">int</span>(<span class="string">&quot;123&quot;</span>) + <span class="built_in">int</span>(<span class="string">&quot;88&quot;</span>) )</span><br><span class="line">print( <span class="built_in">str</span>(<span class="number">111</span>) + <span class="built_in">str</span>(<span class="number">222</span>) )</span><br><span class="line">print( <span class="built_in">str</span>(<span class="number">111</span>)*<span class="number">3</span> )</span><br><span class="line">print( <span class="built_in">int</span>(<span class="string">&quot;8&quot;</span>) &gt; <span class="number">7</span> )</span><br><span class="line">print( <span class="built_in">str</span>(<span class="number">111</span>) == <span class="number">111</span> )</span><br><span class="line">print( <span class="built_in">bool</span>(-<span class="number">1</span>) )</span><br><span class="line">print( <span class="built_in">bool</span>(<span class="number">0</span>) )</span><br><span class="line"><span class="built_in">print</span> ( <span class="built_in">bool</span>(<span class="string">&quot;&quot;</span>) )</span><br><span class="line">print( <span class="built_in">bool</span> (<span class="string">&quot;你好&quot;</span>) )</span><br><span class="line">print( <span class="literal">True</span> == <span class="literal">True</span>)</span><br><span class="line">print( <span class="literal">True</span> == <span class="literal">False</span>)</span><br><span class="line">print( <span class="built_in">bool</span>(<span class="string">&quot;&quot;</span>) == <span class="built_in">bool</span>(<span class="number">0</span>) )</span><br></pre></td></tr></table></figure>
-
-<p>注意：类型转换不是改变原来值，实际在底层是新创建了一个值。例如有整数6，然后使用str（6）转化了一下得到”6”，实际上这个字符串”6”是依据整数6新创建的。</p>
-<h1 id="答案："><a href="#答案：" class="headerlink" title="答案："></a>答案：</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="number">50</span> * <span class="number">10</span> / <span class="number">5</span>)</span><br><span class="line">print(<span class="number">8</span> &gt; <span class="number">10</span>)</span><br><span class="line">print(<span class="number">30</span> % <span class="number">2</span>)</span><br><span class="line">print(<span class="string">&quot;我爱我的祖国&quot;</span> * <span class="number">3</span>)</span><br><span class="line">print(<span class="string">&quot;alex&quot;</span> == <span class="string">&quot;xiabud&quot;</span>)</span><br><span class="line">print(<span class="number">666</span> == <span class="number">666</span>)</span><br><span class="line">print(<span class="string">&quot;666&quot;</span> == <span class="number">666</span>)</span><br><span class="line"></span><br><span class="line">print(<span class="built_in">int</span>(<span class="string">&quot;100&quot;</span>) * <span class="number">3</span>)  <span class="comment"># 300</span></span><br><span class="line">print(<span class="built_in">int</span>(<span class="string">&quot;123&quot;</span>) + <span class="built_in">int</span>(<span class="string">&quot;88&quot;</span>))  <span class="comment"># 211</span></span><br><span class="line">print(<span class="built_in">str</span>(<span class="number">111</span>) + <span class="built_in">str</span>(<span class="number">222</span>))  <span class="comment"># 111222</span></span><br><span class="line">print(<span class="built_in">str</span>(<span class="number">111</span>) * <span class="number">3</span>)  <span class="comment"># 111111111</span></span><br><span class="line">print(<span class="built_in">int</span>(<span class="string">&quot;8&quot;</span>) &gt; <span class="number">7</span>)  <span class="comment"># True</span></span><br><span class="line">print(<span class="built_in">str</span>(<span class="number">111</span>) == <span class="number">111</span>)  <span class="comment"># False</span></span><br><span class="line">print(<span class="built_in">bool</span>(-<span class="number">1</span>))  <span class="comment"># True</span></span><br><span class="line">print(<span class="built_in">bool</span>(<span class="number">0</span>))  <span class="comment"># False</span></span><br><span class="line">print(<span class="built_in">bool</span>(<span class="string">&quot;&quot;</span>))  <span class="comment"># True</span></span><br><span class="line">print(<span class="built_in">bool</span>(<span class="string">&quot;你好&quot;</span>))  <span class="comment"># True</span></span><br><span class="line">print(<span class="literal">True</span> == <span class="literal">True</span>)  <span class="comment"># True</span></span><br><span class="line">print(<span class="literal">True</span> == <span class="literal">False</span>)  <span class="comment"># False</span></span><br><span class="line">print(<span class="built_in">bool</span>(<span class="string">&quot;&quot;</span>) == <span class="built_in">bool</span>(<span class="number">0</span>))  <span class="comment"># True</span></span><br></pre></td></tr></table></figure>
-
-
       
     </div>
 
