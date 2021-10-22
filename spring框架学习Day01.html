@@ -23,19 +23,23 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","version":"8.2.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":false,"lazyload":false,"nav":null},"motion":{"enable":true,"async":true,"transition":{"post_block":"bounceln","post_header":"shake","post_body":"pulse","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
-<meta name="description" content="夏步D的博客，分享在编程或者编曲过程中解决问题所产生的心得，分享编程和编曲的文件。同时偶尔感慨生活，谈谈身边的事儿和感受！">
-<meta property="og:type" content="website">
-<meta property="og:title" content="夏步D的博客">
-<meta property="og:url" content="http://example.com/archives/2021/04/page/2/index.html">
+<meta name="description" content="Spring框架是什么什么是springspring就是一个java框架，使用java语言开发的，轻量级的，开源的框架。可以在j2ee spring核心技术：IOC，AOP spring又叫做容器。spring作为容器，装的是java对象，给属性赋值。 spring作用：实现解耦合，解决java对象之间的耦合，解决模块之间的耦合。 spring的地址https:&#x2F;&#x2F;spring.io spring">
+<meta property="og:type" content="article">
+<meta property="og:title" content="spring框架学习Day01">
+<meta property="og:url" content="http://example.com/spring%E6%A1%86%E6%9E%B6%E5%AD%A6%E4%B9%A0Day01.html">
 <meta property="og:site_name" content="夏步D的博客">
-<meta property="og:description" content="夏步D的博客，分享在编程或者编曲过程中解决问题所产生的心得，分享编程和编曲的文件。同时偶尔感慨生活，谈谈身边的事儿和感受！">
+<meta property="og:description" content="Spring框架是什么什么是springspring就是一个java框架，使用java语言开发的，轻量级的，开源的框架。可以在j2ee spring核心技术：IOC，AOP spring又叫做容器。spring作为容器，装的是java对象，给属性赋值。 spring作用：实现解耦合，解决java对象之间的耦合，解决模块之间的耦合。 spring的地址https:&#x2F;&#x2F;spring.io spring">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="c:/Users/Dell/AppData/Roaming/Typora/typora-user-images/image-20210911120712295.png">
+<meta property="article:published_time" content="2021-10-22T09:25:43.000Z">
+<meta property="article:modified_time" content="2021-10-22T09:26:04.817Z">
 <meta property="article:author" content="夏步D">
 <meta property="article:tag" content="Music production, Orchestration, Synthesizer, Programming, java, web">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="c:/Users/Dell/AppData/Roaming/Typora/typora-user-images/image-20210911120712295.png">
 
 
-<link rel="canonical" href="http://example.com/archives/2021/04/page/2/">
+<link rel="canonical" href="http://example.com/spring%E6%A1%86%E6%9E%B6%E5%AD%A6%E4%B9%A0Day01.html">
 
 
 <script class="page-configurations">
@@ -43,11 +47,11 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
-<title>归档 | 夏步D的博客</title>
+<title>spring框架学习Day01 | 夏步D的博客</title>
   
 
 
@@ -172,7 +176,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -185,6 +189,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Spring%E6%A1%86%E6%9E%B6%E6%98%AF%E4%BB%80%E4%B9%88"><span class="nav-number">1.</span> <span class="nav-text">Spring框架是什么</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFspring"><span class="nav-number">1.1.</span> <span class="nav-text">什么是spring</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#spring%E7%9A%84%E5%9C%B0%E5%9D%80"><span class="nav-number">1.2.</span> <span class="nav-text">spring的地址</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#spring%E7%9A%84%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84"><span class="nav-number">1.3.</span> <span class="nav-text">spring的体系结构</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#spring%E4%BC%98%E7%82%B9"><span class="nav-number">2.</span> <span class="nav-text">spring优点</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -199,20 +204,20 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">27</span>
+          <span class="site-state-item-count">13</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -250,113 +255,107 @@
 </noscript>
 
 
-    <div class="main-inner archive posts-collapse">
+    <div class="main-inner post posts-expand">
 
 
   
-  
-  
-  <div class="post-block">
-    <div class="post-content">
-      <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共计 27 篇日志。 继续努力。</span>
-      </div>
 
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/spring%E6%A1%86%E6%9E%B6%E5%AD%A6%E4%B9%A0Day01.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="夏步D">
+      <meta itemprop="description" content="夏步D的博客，分享在编程或者编曲过程中解决问题所产生的心得，分享编程和编曲的文件。同时偶尔感慨生活，谈谈身边的事儿和感受！">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="夏步D的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          spring框架学习Day01
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
       
-    <div class="collection-year">
-      <span class="collection-header">2021</span>
+
+      <time title="创建时间：2021-10-22 17:25:43 / 修改时间：17:26:04" itemprop="dateCreated datePublished" datetime="2021-10-22T17:25:43+08:00">2021-10-22</time>
+    </span>
+
+  
+    <span id="/spring%E6%A1%86%E6%9E%B6%E5%AD%A6%E4%B9%A0Day01.html" class="post-meta-item leancloud_visitors" data-flag-title="spring框架学习Day01" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h2 id="Spring框架是什么"><a href="#Spring框架是什么" class="headerlink" title="Spring框架是什么"></a>Spring框架是什么</h2><h3 id="什么是spring"><a href="#什么是spring" class="headerlink" title="什么是spring"></a>什么是spring</h3><p>spring就是一个java框架，使用java语言开发的，轻量级的，开源的框架。可以在j2ee</p>
+<p>spring核心技术：IOC，AOP</p>
+<p>spring又叫做容器。spring作为容器，装的是java对象，给属性赋值。</p>
+<p>spring作用：实现解耦合，解决java对象之间的耦合，解决模块之间的耦合。</p>
+<h3 id="spring的地址"><a href="#spring的地址" class="headerlink" title="spring的地址"></a>spring的地址</h3><p><a target="_blank" rel="noopener" href="https://spring.io/">https://spring.io</a></p>
+<h3 id="spring的体系结构"><a href="#spring的体系结构" class="headerlink" title="spring的体系结构"></a>spring的体系结构</h3><p><img src="C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20210911120712295.png" alt="image-20210911120712295"></p>
+<p>Spring 由 20 多个模块组成，它们可以分为数据访问/集成（Data Access/Integration）、Web、面向切面编程（AOP, Aspects）、提供 JVM 的代理（Instrumentation）、消息发送（Messaging）、核心容器（Core Container）和测试（Test）。</p>
+<h2 id="spring优点"><a href="#spring优点" class="headerlink" title="spring优点"></a>spring优点</h2><p>Spring 是一个框架，是一个半成品的软件。有 20 个模块组成。它是一个 容器管理对象，容器是装东西的，Spring 容器不装文本，数字。装的是对象。 Spring 是存储对象的容器。</p>
+<p> （1） 轻量 Spring 框架使用的 jar 都比较小，一般在 1M 以下或者几百 kb。Spring 核心功能的所需的 jar 总共在 3M 左右。 Spring 框架运行占用的资源少，运行效率高。不依赖其他 jar包。</p>
+<p> （2） 针对接口编程，解耦合 Spring 提供了 Ioc 控制反转，由容器管理对象，对象的依赖关系。原来在 程序代码中的对象创建方式，现在由容器完成。对象之间的依赖解耦合。</p>
+<p> （3） AOP 编程的支持 通过 Spring 提供的 AOP 功能，方便进行面向切面的编程，许多不容易用 传统 OOP 实现的功能可以通过 AOP 轻松应付 在 Spring 中，开发人员可以从繁杂的事务管理代码中解脱出来，通过声明 式方式灵活地进行事务的管理，提高开发效率和质量。</p>
+<p> （4） 方便集成各种优秀框架 Spring 不排斥各种优秀的开源框架，相反 Spring 可以降低各种框架的使用难度，Spring 提供了对各种优秀框架（如 Struts,Hibernate、MyBatis）等 的直接支持。简化框架的使用。 Spring 像插线板一样，其他框架是插头，可以容易的组合到一起。需要使用哪 个框架，就把这个插头放入插线板。不需要可以轻易的移除。</p>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-04-24T15:02:42+08:00"
-              content="2021-04-24">
-          04-24
-        </time>
-      </div>
+    
+    
+    
 
-      <div class="post-title">
-          <a class="post-title-link" href="/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%AC%E5%8D%81%E4%BA%8C%E5%A4%A9%E8%AE%B0%E5%BD%95.html" itemprop="url">
-            <span itemprop="name">英语语法学习Day12</span>
-          </a>
-      </div>
+    <footer class="post-footer">
 
-      
-    </header>
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/Mybatis%E6%A1%86%E6%9E%B6%E5%AD%A6%E4%B9%A0Day06.html" rel="prev" title="Mybatis框架学习Day06">
+                  <i class="fa fa-chevron-left"></i> Mybatis框架学习Day06
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/spring%E6%A1%86%E6%9E%B6%E5%AD%A6%E4%B9%A0Day02.html" rel="next" title="spring框架学习Day02">
+                  spring框架学习Day02 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
   </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-04-24T12:40:33+08:00"
-              content="2021-04-24">
-          04-24
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%AC%E5%8D%81%E4%B8%80%E5%A4%A9%E8%AE%B0%E5%BD%95.html" itemprop="url">
-            <span itemprop="name">英语单词背诵Day11</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-04-24T11:43:40+08:00"
-              content="2021-04-24">
-          04-24
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%AC%E5%8D%81%E5%A4%A9%E8%AE%B0%E5%BD%95.html" itemprop="url">
-            <span itemprop="name">英语单词背诵Day10</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-04-24T09:07:54+08:00"
-              content="2021-04-24">
-          04-24
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B9%9D%E5%A4%A9%E8%AE%B0%E5%BD%95.html" itemprop="url">
-            <span itemprop="name">英语单词背诵Day09</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
+</div>
 
 
-    </div>
-  </div>
-  
-  
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/archives/2021/04/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/archives/2021/04/">1</a><span class="page-number current">2</span>
-  </nav>
 
+
+
+
+    <div class="comments" id="lv-container" data-id="city" data-uid="MTAyMC81Mjk5Ny8yOTQ3Mw=="></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -529,6 +528,21 @@ setInterval("createtime()",250);
 
 
 
+<script>
+NexT.utils.loadComments('#lv-container', () => {
+  window.livereOptions = {
+    refer: "spring框架学习Day01.html"
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+});
+</script>
 
 </body>
 </html>
