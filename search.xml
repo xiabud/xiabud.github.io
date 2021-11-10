@@ -1,44 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>python学习Day01</title>
-    <url>/python%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%80%E5%A4%A9%E8%AE%B0%E5%BD%95.html</url>
-    <content><![CDATA[<h2 id="python输出语法"><a href="#python输出语法" class="headerlink" title="python输出语法"></a>python输出语法</h2><h3 id="将结果或者内容呈现给用户"><a href="#将结果或者内容呈现给用户" class="headerlink" title="将结果或者内容呈现给用户"></a>将结果或者内容呈现给用户</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(<span class="string">&quot;Hellow world&quot;</span>)</span><br></pre></td></tr></table></figure>
-<span id="more"></span>
-<h3 id="关于输出："><a href="#关于输出：" class="headerlink" title="关于输出："></a>关于输出：</h3><ul>
-<li><p>默认在尾部添加换行符</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(<span class="string">&quot;看看风景美如画，&quot;</span>)</span><br><span class="line">print(<span class="string">&quot;本想吟诗赠天下。&quot;</span>)</span><br><span class="line"></span><br><span class="line">输出：</span><br><span class="line">看看风景美如画，</span><br><span class="line">本想吟诗赠天下。</span><br></pre></td></tr></table></figure></li>
-<li><p>取消换行，在代码末尾添加” end=”” “</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(<span class="string">&quot;看看风景美如画，&quot;</span>,end=<span class="string">&quot;&quot;</span>)</span><br><span class="line">print(<span class="string">&quot;本想吟诗赠天下。&quot;</span>,end=<span class="string">&quot;&quot;</span>)</span><br><span class="line"></span><br><span class="line">输出：</span><br><span class="line">看看风景美如画，本想吟诗赠天下。</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h2 id="python数据类型"><a href="#python数据类型" class="headerlink" title="python数据类型"></a>python数据类型</h2><h3 id="整型（int）"><a href="#整型（int）" class="headerlink" title="整型（int）"></a>整型（int）</h3><ul>
-<li><p>python可以直接输出整型</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 输出整型“100”</span></span><br><span class="line">print(<span class="number">100</span>)</span><br><span class="line"><span class="comment"># 输出整型“2+4”</span></span><br><span class="line">print(<span class="number">2</span> + <span class="number">4</span>)</span><br><span class="line"><span class="comment"># 输出整型“2×3”</span></span><br><span class="line">print(<span class="number">2</span> * <span class="number">3</span>)</span><br><span class="line"><span class="comment"># 输出整型“10÷2”</span></span><br><span class="line">print(<span class="number">10</span> / <span class="number">2</span>)</span><br><span class="line"><span class="comment"># 输出整型“10÷3的余数”</span></span><br><span class="line">print(<span class="number">10</span> % <span class="number">3</span>)</span><br><span class="line"><span class="comment"># 输出整型“2^4”</span></span><br><span class="line">print(<span class="number">2</span> ** <span class="number">4</span>)</span><br><span class="line"></span><br><span class="line">输出：</span><br><span class="line"><span class="number">100</span></span><br><span class="line"><span class="number">6</span></span><br><span class="line"><span class="number">6</span></span><br><span class="line"><span class="number">5.0</span></span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">16</span></span><br></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="字符串（str）"><a href="#字符串（str）" class="headerlink" title="字符串（str）"></a>字符串（str）</h3><ul>
-<li><p>字符串用英文单双引号扩出来</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(<span class="string">&quot;我是xiabud&quot;</span>)</span><br><span class="line">print(<span class="string">&quot;这是我的字符串测试代码&quot;</span>)</span><br><span class="line"></span><br><span class="line">输出：</span><br><span class="line">我是xiabud</span><br><span class="line">这是我的字符串测试代码</span><br></pre></td></tr></table></figure></li>
-<li><p>三引号可以输出多行字符串</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(<span class="string">&quot;&quot;&quot;这个是三引号输出，</span></span><br><span class="line"><span class="string">三引号可以输出多行字符串。&quot;&quot;&quot;</span>)</span><br></pre></td></tr></table></figure></li>
-<li><p>对于字符串，可以通过加号拼接起来</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(<span class="string">&quot;我是&quot;</span>+<span class="string">&quot;xiabud&quot;</span>)</span><br><span class="line"></span><br><span class="line">输出：</span><br><span class="line">我是xiabud</span><br></pre></td></tr></table></figure></li>
-<li><p>可以让整型和字符串进行相乘，让字符串重复出现并且拼接</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(<span class="number">3</span>*<span class="string">&quot;我要干饭&quot;</span>)</span><br><span class="line"></span><br><span class="line">输出：</span><br><span class="line">我要干饭我要干饭我要干饭</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="布尔类型"><a href="#布尔类型" class="headerlink" title="布尔类型"></a>布尔类型</h3><ul>
-<li><p>布尔类型中一共有两个值：true/false</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(<span class="number">1</span> &gt; <span class="number">2</span>)</span><br><span class="line">print(<span class="number">1</span> == <span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">输出：</span><br><span class="line"><span class="literal">False</span></span><br><span class="line"><span class="literal">True</span></span><br></pre></td></tr></table></figure></li>
-</ul>
-]]></content>
-      <categories>
-        <category>python</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>学习心得</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>微信小程序学习Day01</title>
     <url>/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%80%E5%A4%A9%E8%AE%B0%E5%BD%95.html</url>
     <content><![CDATA[<h2 id="文件目录介绍"><a href="#文件目录介绍" class="headerlink" title="文件目录介绍"></a>文件目录介绍</h2><img src="images/image-20210329183535316.png" alt="小程序目录">
@@ -128,8 +90,46 @@
         <category>微信小程序</category>
       </categories>
       <tags>
-        <tag>学习心得</tag>
         <tag>微信小程序</tag>
+        <tag>学习心得</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>python学习Day01</title>
+    <url>/python%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%80%E5%A4%A9%E8%AE%B0%E5%BD%95.html</url>
+    <content><![CDATA[<h2 id="python输出语法"><a href="#python输出语法" class="headerlink" title="python输出语法"></a>python输出语法</h2><h3 id="将结果或者内容呈现给用户"><a href="#将结果或者内容呈现给用户" class="headerlink" title="将结果或者内容呈现给用户"></a>将结果或者内容呈现给用户</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(<span class="string">&quot;Hellow world&quot;</span>)</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+<h3 id="关于输出："><a href="#关于输出：" class="headerlink" title="关于输出："></a>关于输出：</h3><ul>
+<li><p>默认在尾部添加换行符</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(<span class="string">&quot;看看风景美如画，&quot;</span>)</span><br><span class="line">print(<span class="string">&quot;本想吟诗赠天下。&quot;</span>)</span><br><span class="line"></span><br><span class="line">输出：</span><br><span class="line">看看风景美如画，</span><br><span class="line">本想吟诗赠天下。</span><br></pre></td></tr></table></figure></li>
+<li><p>取消换行，在代码末尾添加” end=”” “</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(<span class="string">&quot;看看风景美如画，&quot;</span>,end=<span class="string">&quot;&quot;</span>)</span><br><span class="line">print(<span class="string">&quot;本想吟诗赠天下。&quot;</span>,end=<span class="string">&quot;&quot;</span>)</span><br><span class="line"></span><br><span class="line">输出：</span><br><span class="line">看看风景美如画，本想吟诗赠天下。</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="python数据类型"><a href="#python数据类型" class="headerlink" title="python数据类型"></a>python数据类型</h2><h3 id="整型（int）"><a href="#整型（int）" class="headerlink" title="整型（int）"></a>整型（int）</h3><ul>
+<li><p>python可以直接输出整型</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 输出整型“100”</span></span><br><span class="line">print(<span class="number">100</span>)</span><br><span class="line"><span class="comment"># 输出整型“2+4”</span></span><br><span class="line">print(<span class="number">2</span> + <span class="number">4</span>)</span><br><span class="line"><span class="comment"># 输出整型“2×3”</span></span><br><span class="line">print(<span class="number">2</span> * <span class="number">3</span>)</span><br><span class="line"><span class="comment"># 输出整型“10÷2”</span></span><br><span class="line">print(<span class="number">10</span> / <span class="number">2</span>)</span><br><span class="line"><span class="comment"># 输出整型“10÷3的余数”</span></span><br><span class="line">print(<span class="number">10</span> % <span class="number">3</span>)</span><br><span class="line"><span class="comment"># 输出整型“2^4”</span></span><br><span class="line">print(<span class="number">2</span> ** <span class="number">4</span>)</span><br><span class="line"></span><br><span class="line">输出：</span><br><span class="line"><span class="number">100</span></span><br><span class="line"><span class="number">6</span></span><br><span class="line"><span class="number">6</span></span><br><span class="line"><span class="number">5.0</span></span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">16</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="字符串（str）"><a href="#字符串（str）" class="headerlink" title="字符串（str）"></a>字符串（str）</h3><ul>
+<li><p>字符串用英文单双引号扩出来</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(<span class="string">&quot;我是xiabud&quot;</span>)</span><br><span class="line">print(<span class="string">&quot;这是我的字符串测试代码&quot;</span>)</span><br><span class="line"></span><br><span class="line">输出：</span><br><span class="line">我是xiabud</span><br><span class="line">这是我的字符串测试代码</span><br></pre></td></tr></table></figure></li>
+<li><p>三引号可以输出多行字符串</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(<span class="string">&quot;&quot;&quot;这个是三引号输出，</span></span><br><span class="line"><span class="string">三引号可以输出多行字符串。&quot;&quot;&quot;</span>)</span><br></pre></td></tr></table></figure></li>
+<li><p>对于字符串，可以通过加号拼接起来</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(<span class="string">&quot;我是&quot;</span>+<span class="string">&quot;xiabud&quot;</span>)</span><br><span class="line"></span><br><span class="line">输出：</span><br><span class="line">我是xiabud</span><br></pre></td></tr></table></figure></li>
+<li><p>可以让整型和字符串进行相乘，让字符串重复出现并且拼接</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(<span class="number">3</span>*<span class="string">&quot;我要干饭&quot;</span>)</span><br><span class="line"></span><br><span class="line">输出：</span><br><span class="line">我要干饭我要干饭我要干饭</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="布尔类型"><a href="#布尔类型" class="headerlink" title="布尔类型"></a>布尔类型</h3><ul>
+<li><p>布尔类型中一共有两个值：true/false</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(<span class="number">1</span> &gt; <span class="number">2</span>)</span><br><span class="line">print(<span class="number">1</span> == <span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">输出：</span><br><span class="line"><span class="literal">False</span></span><br><span class="line"><span class="literal">True</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>学习心得</tag>
+        <tag>python</tag>
       </tags>
   </entry>
   <entry>
@@ -171,8 +171,8 @@
         <category>python</category>
       </categories>
       <tags>
-        <tag>python</tag>
         <tag>学习心得</tag>
+        <tag>python</tag>
       </tags>
   </entry>
   <entry>
@@ -191,8 +191,8 @@
         <category>python</category>
       </categories>
       <tags>
-        <tag>python</tag>
         <tag>学习心得</tag>
+        <tag>python</tag>
       </tags>
   </entry>
   <entry>
@@ -236,8 +236,143 @@
         <category>python</category>
       </categories>
       <tags>
-        <tag>python</tag>
         <tag>学习心得</tag>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mybatis学习Day03</title>
+    <url>/Mybatis%E5%AD%A6%E4%B9%A0Day03.html</url>
+    <content><![CDATA[<h2 id="MyBatis使用传统Dao执行sql"><a href="#MyBatis使用传统Dao执行sql" class="headerlink" title="MyBatis使用传统Dao执行sql"></a>MyBatis使用传统Dao执行sql</h2><p>在com/xienode/dao创建impl包，在包中创建StudentDaoImpl类，让这个类实现StudentDao的接口。</p>
+<p>实现方法：</p>
+<p>①获取sqlsession对象</p>
+<p>②再指定执行的sqlId（依然为“namespace”+“.”+“Id”）</p>
+<p>③再调用sqlsession的方法，选择sqlId和传入的值</p>
+<p>④关闭sqlsession</p>
+<p>⑤返回sqlsession的对象（student）</p>
+<span id="more"></span>
+
+<p>代码如下：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">StudentDaoImpl</span> <span class="keyword">implements</span> <span class="title">StudentDao</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Student <span class="title">selectById</span><span class="params">(Integer id)</span> </span>&#123;</span><br><span class="line">        SqlSession sqlSession = MyBatisUtil.getSqlSession();</span><br><span class="line">        String sqlId =<span class="string">&quot;com.xienode.dao.StudentDao.selectId&quot;</span>;</span><br><span class="line">        Student student= sqlSession.selectOne(sqlId,id);</span><br><span class="line">        sqlSession.close();</span><br><span class="line">        <span class="keyword">return</span> student;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> List&lt;Student&gt; <span class="title">selectStudents</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">        SqlSession session = MyBatisUtil.getSqlSession();</span><br><span class="line"></span><br><span class="line">        String sqlId=<span class="string">&quot;com.xienode.dao.StudentDao.selectStudents&quot;</span>;</span><br><span class="line"></span><br><span class="line">        List&lt;Student&gt; students = session.selectList(sqlId);</span><br><span class="line"></span><br><span class="line">        session.close();</span><br><span class="line">        <span class="keyword">return</span> students;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">insertStudent</span><span class="params">(Student student)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">        SqlSession session = MyBatisUtil.getSqlSession();</span><br><span class="line"></span><br><span class="line">        String sqlId=<span class="string">&quot;com.xienode.dao.StudentDao.insertStudent&quot;</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> rows = session.insert(sqlId,student);</span><br><span class="line"></span><br><span class="line">        session.commit();</span><br><span class="line"></span><br><span class="line">        System.out.println(<span class="string">&quot;insert的行数=&quot;</span>+rows);</span><br><span class="line"></span><br><span class="line">        session.close();</span><br><span class="line">        <span class="keyword">return</span> rows;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="Mybatis的Dao代理说明"><a href="#Mybatis的Dao代理说明" class="headerlink" title="Mybatis的Dao代理说明"></a>Mybatis的Dao代理说明</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">String sqlId =<span class="string">&quot;com.xienode.dao.StudentDao.selectId&quot;</span>;</span><br><span class="line">Student student= sqlSession.selectOne(sqlId,id);</span><br></pre></td></tr></table></figure>
+
+<p>测试方法中：调用dao的方法</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Student student = dao.selectById(<span class="number">1001</span>);</span><br></pre></td></tr></table></figure>
+
+<p>1）    dao：通过反射能够得到全限定类型名称</p>
+<p>​           dao是studentDao类型的，全限定名称 com.bjpowernode.dao.StudentDao</p>
+<p>2）    selectById:dao中的方法名称，方法名称就是 mapper文件中标签的id</p>
+<p>​           通过dao.selectById（）能得到sqlId=”com.bipowernode.dao.studentDao.selectById”；</p>
+<p>3）    确定调用sqlsession的那个方法</p>
+<p>​           1.根帮dao接口的方法返回中，如果返回是一个对象，例如奶tudent，调用sqlsession.selectone（）；</p>
+<p>​            如果dao接口中的方法返List，调用sqlsession的 selectlist（）；</p>
+<p>​           2.根据mapper文件中的标签，如果标签是<insert>，调用sqlsession.insert()方法。</p>
+<p>mybatis框架，发现使用dao的方法调用能确定执行sql语句的必要信息，mybatis简化dao对象的实现。</p>
+<p>imybatis框架在程序执行期间，根据你的Dao接口，创建一个内存中的接口的实现类对象。</p>
+<p>mybatis把这个技术叫做dao技术（动态代理，dao的动态代理）。</p>
+<p>dao代理技术：mybatis 创建 studentDao接口的实现类 Proxy(studentDaoImpl)，使用框架创建的studentDaoImpl代替你自己手工实现的studentDaoImpl类的功能，不能开发人员写dao接口的实现类。</p>
+<h3 id="使用代理技术的要求"><a href="#使用代理技术的要求" class="headerlink" title="使用代理技术的要求"></a>使用代理技术的要求</h3><p>①文件中的namespace：必须是dao接口的全限定名称</p>
+<p>②mapper文件中的标签id是dao接口的方法名称一致</p>
+<h3 id="mybatis代理的实现方式"><a href="#mybatis代理的实现方式" class="headerlink" title="mybatis代理的实现方式"></a>mybatis代理的实现方式</h3><p>使用sqlsession对象的方法getMapper（dao.class）</p>
+<p>例如：现在有StudentDao的接口。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">sqlsession session = MybatisUitl.getSqlSessiom();</span><br><span class="line">StudentDao dao = session.getMapper(StudentDao.class);</span><br><span class="line">Student student = dao.selectById(<span class="number">1001</span>);</span><br><span class="line"><span class="comment">//上面代码</span></span><br><span class="line">StudentDao dao = session.getMapper(StudentDao.class);</span><br><span class="line"><span class="comment">//等同于</span></span><br><span class="line">StudentDao dao = <span class="keyword">new</span> StudentDaoImpl();</span><br></pre></td></tr></table></figure>
+
+<p>在Test文件中使用代理查询数据：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testSelectById</span><span class="params">()</span></span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//获取sqlSession对象</span></span><br><span class="line">    SqlSession session = MyBatisUtil.getSqlSession();</span><br><span class="line">    <span class="comment">//获取Dao的代理</span></span><br><span class="line">    StudentDao dao =  session.getMapper(StudentDao.class);</span><br><span class="line">    <span class="comment">//调用dao的方法</span></span><br><span class="line">    Student student = dao.selectById(<span class="number">1005</span>);</span><br><span class="line">    <span class="comment">//输出传入的数据</span></span><br><span class="line">    System.out.println(<span class="string">&quot;查询的参数是&quot;</span>+student);</span><br><span class="line">    <span class="comment">//关闭sqlSession对象</span></span><br><span class="line">    session.close();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行截图：</p>
+<img src="images/image-20210801171110032.png">
+
+<p>运行成功！</p>
+<h3 id="理解参数"><a href="#理解参数" class="headerlink" title="理解参数"></a>理解参数</h3><p>理解参数是：通过java程序把数据传入到mapper文件中的sql语句中。参数主要是指Dao接口方法的形参。</p>
+<h4 id="ParameterType"><a href="#ParameterType" class="headerlink" title="ParameterType"></a>ParameterType</h4><p>ParameterType：表示参数的类型，指定Dao方法的形参数据类型。这个形参的数据类型是给mybatis使用。</p>
+<p>mybatis在给sql语句的参数赋值时使用。PreparedStatement.setXXX(位置，值)</p>
+<p>PreparedStatement pst = conn.preparedStatement(“select id,name,email,age from student where id = ?”)；</p>
+<p>给？位置赋值</p>
+<p>参数integer，执行pst.setInt(1,1005);</p>
+<p>参数是string，执行pst.setString(1.”1005”);</p>
+<p>第一个用法：java类型的全新定名称  parameterType = “java.long.Integer”</p>
+<p>第二个用法：mybatis定义的java类型别名” parameterType = “int”</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;selectById&quot;</span> <span class="attr">parameterType</span>=<span class="string">&quot;int&quot;</span>  <span class="attr">resultType</span>=<span class="string">&quot;com.xienode.domain.Student&quot;</span>&gt;</span></span><br><span class="line">    select id,name,email,age from student where id = #&#123;studentId&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="Dao接口方法是一个简单类型的参数"><a href="#Dao接口方法是一个简单类型的参数" class="headerlink" title="Dao接口方法是一个简单类型的参数"></a>Dao接口方法是一个简单类型的参数</h4><p>dao接口：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//dao接口的方法形参是一个简单的类型</span></span><br><span class="line"><span class="comment">//简单类型：java基本数据类型和字符串（String）</span></span><br><span class="line"><span class="function">Student <span class="title">selectByEmail</span><span class="params">(String email)</span></span>;</span><br></pre></td></tr></table></figure>
+
+<p>mapper文件：</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--</span></span><br><span class="line"><span class="comment">dao接口是一个简单类型的参数</span></span><br><span class="line"><span class="comment">mapper文件，获取这个参数值，使用的语法格式是#&#123;任意字符&#125;</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;selectByEmail&quot;</span> <span class="attr">parameterType</span>=<span class="string">&quot;string&quot;</span> <span class="attr">resultType</span>=<span class="string">&quot;com.xienode.domain.Student&quot;</span>&gt;</span></span><br><span class="line">    select id,name,email,age from student where email = #&#123;studentEmail&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="dao接口有多个简单类型的参数"><a href="#dao接口有多个简单类型的参数" class="headerlink" title="dao接口有多个简单类型的参数"></a>dao接口有多个简单类型的参数</h4><p>@Param：命名参数，在方法的形参前面使用的，定义参数名。这个名称可以用在mapper文件中。</p>
+<p>dao接口方法的定义</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*多个简单类型参数</span></span><br><span class="line"><span class="comment">* 使用@Param命名参数，注解是mybatis提供的</span></span><br><span class="line"><span class="comment">* 位置：在形参前面</span></span><br><span class="line"><span class="comment">* 属性：value 自定义的参数名称</span></span><br><span class="line"><span class="comment">* */</span></span><br><span class="line"><span class="function">List&lt;Student&gt; <span class="title">selectNameOrAge</span><span class="params">(<span class="meta">@Param(&quot;myname&quot;)</span> String name,</span></span></span><br><span class="line"><span class="function"><span class="params">                              <span class="meta">@Param(&quot;myage&quot;)</span> Integer age)</span></span>;</span><br></pre></td></tr></table></figure>
+
+<p>命名参数的写法：mapper文件</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--当多个简单类型的参数，当使用了@Param命名后，例如@param(&quot;myname&quot;),在mapper中，使用#&#123;命名的参数&#125;，例如#&#123;myname&#125;</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;selectNameOrAge&quot;</span> <span class="attr">resultType</span>=<span class="string">&quot;com.xienode.domain.Student&quot;</span>&gt;</span></span><br><span class="line">    select id,name,email,age from student where name = #&#123;myname&#125; or age = #&#123;myage&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="dao接口方法使用一个对象作为参数"><a href="#dao接口方法使用一个对象作为参数" class="headerlink" title="dao接口方法使用一个对象作为参数"></a>dao接口方法使用一个对象作为参数</h4><p>方法的形参是一个java对象，这个java对象表示多个参数。使用对象的属性值作为参数使用</p>
+<p>java对象的定义:</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Student</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> Integer id;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="keyword">private</span> String email;</span><br><span class="line">    <span class="keyword">private</span> Integer age;</span><br><span class="line">    <span class="comment">//set,get方法</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">QueryParam</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> Object p1;</span><br><span class="line">    <span class="keyword">private</span> Object p2;</span><br><span class="line">    <span class="comment">//set,get方法</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>dao接口中的定义：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*一个java对象最为参数(对象由属性，每个属性有set，get方法)*/</span></span><br><span class="line"></span><br><span class="line"><span class="function">List&lt;Student&gt; <span class="title">selectByObject</span><span class="params">(Student student)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="function">List&lt;Student&gt; <span class="title">selectByQueryParam</span> <span class="params">(QueryParam param)</span></span>;</span><br></pre></td></tr></table></figure>
+
+<p>mapper文件：</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">    <span class="comment">&lt;!--</span></span><br><span class="line"><span class="comment">    一个java对象作为方法的参数，使用对象的属性作为参数值使用</span></span><br><span class="line"><span class="comment">    简单的语法：#&#123;属性名&#125;，mybatis调用此属性的getXXX()方法获取属性值</span></span><br><span class="line"><span class="comment">    --&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;selectByObject&quot;</span> <span class="attr">resultType</span>=<span class="string">&quot;com.xienode.domain.Student&quot;</span>&gt;</span></span><br><span class="line">        select id,name,email,age from student where name = #&#123;name&#125; or age = #&#123;age&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;selectByQueryParam&quot;</span> <span class="attr">resultType</span>=<span class="string">&quot;com.xienode.domain.Student&quot;</span>&gt;</span></span><br><span class="line">    select id,name,email,age from student where name = #&#123;p1&#125; or age = #&#123;p2&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="dao接口中多个简单类型的参数，使用位置"><a href="#dao接口中多个简单类型的参数，使用位置" class="headerlink" title="dao接口中多个简单类型的参数，使用位置"></a>dao接口中多个简单类型的参数，使用位置</h4><p>参数位置：dao接口中方法的形参列表，从左往右，参数位置是0,1,2……</p>
+<p>语法格式：#{arg0}，#{arg1}</p>
+<p> dao接口：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*使用位置获取参数*/</span></span><br><span class="line"><span class="function">List&lt;Student&gt; <span class="title">selectByPosition</span><span class="params">(String name, Integer age)</span></span>;</span><br></pre></td></tr></table></figure>
+
+<p>mapper文件:</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;selectByPosition&quot;</span> <span class="attr">resultType</span>=<span class="string">&quot;com.xienode.domain.Student&quot;</span>&gt;</span></span><br><span class="line">    select id,name,email,age from student where name = #&#123;arg0&#125; or age = #&#123;arg1&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="和-符号的区别"><a href="#和-符号的区别" class="headerlink" title="#和$符号的区别"></a>#和$符号的区别</h2><h3 id="“-”-占位符"><a href="#“-”-占位符" class="headerlink" title="“#” 占位符"></a>“#” 占位符</h3><p>语法：#{字符}</p>
+<p>mybatis处理#{}使用jdbc对象是PrepareStatment对象</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;selectById&quot;</span> <span class="attr">parameterType</span>=<span class="string">&quot;int&quot;</span>  <span class="attr">resultType</span>=<span class="string">&quot;com.xienode.domain.Student&quot;</span>&gt;</span></span><br><span class="line">    select id,name,email,age from student where id = #&#123;studentId&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">mybatis创建prepareStatement对象，执行qsl语句</span><br><span class="line">Srting sql=&quot;select id,name,email,age from student where id = ?&quot;;</span><br><span class="line">PrepareStatement pst = conn.prepareStatement(sql);</span><br><span class="line">pst.setInt(1,1001);  //传递参数</span><br><span class="line">ResultSet rs = pst.executeQuery();	//执行sql语句</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>#{}特点：</p>
+<p>①使用的PrepareStatement对象，执行sql语句，效率高。</p>
+<p>②使用的PrepareStatement对象，能避险sql语句，sql语句执行更安全。</p>
+<p>③#{}常常作为列值使用的，位于等于号的右侧，#{}位置的值的数据类型有关的。</p>
+<h3 id="“-”占位符"><a href="#“-”占位符" class="headerlink" title="“$”占位符"></a>“$”占位符</h3><p>语法：${字符}</p>
+<p>mybatis执行${}占位符的sql语句</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;selectById&quot;</span> <span class="attr">parameterType</span>=<span class="string">&quot;int&quot;</span>  <span class="attr">resultType</span>=<span class="string">&quot;com.xienode.domain.Student&quot;</span>&gt;</span></span><br><span class="line">    select id,name,email,age from student where id = $&#123;studentId&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line"></span><br><span class="line">$&#123;&#125; 表示字符串的连接，把sql语句的其他内容和$&#123;&#125;内容使用 字节串（+） 连接的方式连接在一起</span><br><span class="line">String sql = &quot;select id,name,email,age from student where id =&quot; + &quot;1001&quot;</span><br><span class="line"></span><br><span class="line">mybatis创建Statement对象，执行sql语句。</span><br><span class="line">Statement stmt = conn.createStatement(sql);</span><br><span class="line">ResultSet rs = stmt.executeQuery();</span><br></pre></td></tr></table></figure>
+
+<p>${}的特点：</p>
+<p>①使用Statement对象，执行sql语句，效率低。</p>
+<p>②${}占位符的值，使用的字符串连接方式，有sql注入的风险。有代码安全的问题。</p>
+<p>③${}数据是原样使用的，不会区分数据类型。</p>
+<p>④${}常用作列名或者表名，能在保证数据安全的情况下使用${}。</p>
+<h3 id="占位符的使用举例"><a href="#占位符的使用举例" class="headerlink" title="${}占位符的使用举例"></a>${}占位符的使用举例</h3><p>dao接口</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//使用$&#123;&#125;来对查询进行排序</span></span><br><span class="line"><span class="function">List&lt;Student&gt; <span class="title">queryStudentOrderByColName</span><span class="params">(<span class="meta">@Param(&quot;Colname&quot;)</span> String name)</span></span>;</span><br></pre></td></tr></table></figure>
+
+<p>mapper文件：</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;queryStudentOrderByColName&quot;</span> <span class="attr">resultType</span>=<span class="string">&quot;com.xienode.domain.Student&quot;</span>&gt;</span></span><br><span class="line">    select * from student order by $&#123;Colname&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<p>java测试文件里面：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testQueryStudentOrderByColName</span><span class="params">()</span></span>&#123;</span><br><span class="line">    SqlSession sqlSession = MyBatisUtil.getSqlSession();</span><br><span class="line">    StudentDao dao = sqlSession.getMapper(StudentDao.class);</span><br><span class="line">    <span class="comment">/*按位置传递参数*/</span></span><br><span class="line">    <span class="comment">//选择属性进行排序</span></span><br><span class="line">    List&lt;Student&gt; students = dao.queryStudentOrderByColName(<span class="string">&quot;email&quot;</span>);<span class="comment">//在这里可以选择“age”，“name”，“email”和“id”</span></span><br><span class="line">    students.forEach(student1 -&gt; System.out.println(<span class="string">&quot;stu&quot;</span>+student1));</span><br><span class="line">    sqlSession.close();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>执行结果：</p>
+<img src="images/image-20210812091932093.png">
+
+
+
+<p>附：在运行时出现如下的错误时：“It’s likely that neither a Result Type nor a Result Map was specified.”</p>
+<p>原因为：在mapper文件里面将ResultType写成了parameterType，改回去就好了。</p>
+<img src="images/image-20210811220437881.png">]]></content>
+      <categories>
+        <category>mybatis</category>
+      </categories>
+      <tags>
+        <tag>学习心得</tag>
+        <tag>mybatis</tag>
       </tags>
   </entry>
   <entry>
@@ -484,153 +619,109 @@
       </tags>
   </entry>
   <entry>
-    <title>Mybatis框架学习Day04</title>
+    <title></title>
     <url>/Mybatis%E6%A1%86%E6%9E%B6%E5%AD%A6%E4%B9%A0Day04.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>Mybatis学习Day03</title>
-    <url>/Mybatis%E5%AD%A6%E4%B9%A0Day03.html</url>
-    <content><![CDATA[<h2 id="MyBatis使用传统Dao执行sql"><a href="#MyBatis使用传统Dao执行sql" class="headerlink" title="MyBatis使用传统Dao执行sql"></a>MyBatis使用传统Dao执行sql</h2><p>在com/xienode/dao创建impl包，在包中创建StudentDaoImpl类，让这个类实现StudentDao的接口。</p>
-<p>实现方法：</p>
-<p>①获取sqlsession对象</p>
-<p>②再指定执行的sqlId（依然为“namespace”+“.”+“Id”）</p>
-<p>③再调用sqlsession的方法，选择sqlId和传入的值</p>
-<p>④关闭sqlsession</p>
-<p>⑤返回sqlsession的对象（student）</p>
-<span id="more"></span>
+    <content><![CDATA[<h2 id="封装Mybatis输出结果"><a href="#封装Mybatis输出结果" class="headerlink" title="封装Mybatis输出结果"></a>封装Mybatis输出结果</h2><p>封装输出结果：Mybatis执行sql语句，得到ResultSet，转化为java对象。</p>
+<p>讲两个：resultType和resultMap</p>
+<h3 id="resultType"><a href="#resultType" class="headerlink" title="resultType"></a>resultType</h3><h4 id="resultType：表示java的自定义对象"><a href="#resultType：表示java的自定义对象" class="headerlink" title="resultType：表示java的自定义对象"></a>resultType：表示java的自定义对象</h4><p>resultType属性：在执行select时使用，作为select标签的属性出现的</p>
+<p>resultType:表示结果类型，mysql执行sql语句，得到java对象的类型。它的值有两种</p>
+<p>①java全限定名称</p>
+<p>②使用别名</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function">Student <span class="title">selectById</span><span class="params">(Intger id)</span></span>;</span><br></pre></td></tr></table></figure>
 
-<p>代码如下：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">StudentDaoImpl</span> <span class="keyword">implements</span> <span class="title">StudentDao</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Student <span class="title">selectById</span><span class="params">(Integer id)</span> </span>&#123;</span><br><span class="line">        SqlSession sqlSession = MyBatisUtil.getSqlSession();</span><br><span class="line">        String sqlId =<span class="string">&quot;com.xienode.dao.StudentDao.selectId&quot;</span>;</span><br><span class="line">        Student student= sqlSession.selectOne(sqlId,id);</span><br><span class="line">        sqlSession.close();</span><br><span class="line">        <span class="keyword">return</span> student;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> List&lt;Student&gt; <span class="title">selectStudents</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">        SqlSession session = MyBatisUtil.getSqlSession();</span><br><span class="line"></span><br><span class="line">        String sqlId=<span class="string">&quot;com.xienode.dao.StudentDao.selectStudents&quot;</span>;</span><br><span class="line"></span><br><span class="line">        List&lt;Student&gt; students = session.selectList(sqlId);</span><br><span class="line"></span><br><span class="line">        session.close();</span><br><span class="line">        <span class="keyword">return</span> students;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">insertStudent</span><span class="params">(Student student)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">        SqlSession session = MyBatisUtil.getSqlSession();</span><br><span class="line"></span><br><span class="line">        String sqlId=<span class="string">&quot;com.xienode.dao.StudentDao.insertStudent&quot;</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> rows = session.insert(sqlId,student);</span><br><span class="line"></span><br><span class="line">        session.commit();</span><br><span class="line"></span><br><span class="line">        System.out.println(<span class="string">&quot;insert的行数=&quot;</span>+rows);</span><br><span class="line"></span><br><span class="line">        session.close();</span><br><span class="line">        <span class="keyword">return</span> rows;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="Mybatis的Dao代理说明"><a href="#Mybatis的Dao代理说明" class="headerlink" title="Mybatis的Dao代理说明"></a>Mybatis的Dao代理说明</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">String sqlId =<span class="string">&quot;com.xienode.dao.StudentDao.selectId&quot;</span>;</span><br><span class="line">Student student= sqlSession.selectOne(sqlId,id);</span><br></pre></td></tr></table></figure>
-
-<p>测试方法中：调用dao的方法</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Student student = dao.selectById(<span class="number">1001</span>);</span><br></pre></td></tr></table></figure>
-
-<p>1）    dao：通过反射能够得到全限定类型名称</p>
-<p>​           dao是studentDao类型的，全限定名称 com.bjpowernode.dao.StudentDao</p>
-<p>2）    selectById:dao中的方法名称，方法名称就是 mapper文件中标签的id</p>
-<p>​           通过dao.selectById（）能得到sqlId=”com.bipowernode.dao.studentDao.selectById”；</p>
-<p>3）    确定调用sqlsession的那个方法</p>
-<p>​           1.根帮dao接口的方法返回中，如果返回是一个对象，例如奶tudent，调用sqlsession.selectone（）；</p>
-<p>​            如果dao接口中的方法返List，调用sqlsession的 selectlist（）；</p>
-<p>​           2.根据mapper文件中的标签，如果标签是<insert>，调用sqlsession.insert()方法。</p>
-<p>mybatis框架，发现使用dao的方法调用能确定执行sql语句的必要信息，mybatis简化dao对象的实现。</p>
-<p>imybatis框架在程序执行期间，根据你的Dao接口，创建一个内存中的接口的实现类对象。</p>
-<p>mybatis把这个技术叫做dao技术（动态代理，dao的动态代理）。</p>
-<p>dao代理技术：mybatis 创建 studentDao接口的实现类 Proxy(studentDaoImpl)，使用框架创建的studentDaoImpl代替你自己手工实现的studentDaoImpl类的功能，不能开发人员写dao接口的实现类。</p>
-<h3 id="使用代理技术的要求"><a href="#使用代理技术的要求" class="headerlink" title="使用代理技术的要求"></a>使用代理技术的要求</h3><p>①文件中的namespace：必须是dao接口的全限定名称</p>
-<p>②mapper文件中的标签id是dao接口的方法名称一致</p>
-<h3 id="mybatis代理的实现方式"><a href="#mybatis代理的实现方式" class="headerlink" title="mybatis代理的实现方式"></a>mybatis代理的实现方式</h3><p>使用sqlsession对象的方法getMapper（dao.class）</p>
-<p>例如：现在有StudentDao的接口。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">sqlsession session = MybatisUitl.getSqlSessiom();</span><br><span class="line">StudentDao dao = session.getMapper(StudentDao.class);</span><br><span class="line">Student student = dao.selectById(<span class="number">1001</span>);</span><br><span class="line"><span class="comment">//上面代码</span></span><br><span class="line">StudentDao dao = session.getMapper(StudentDao.class);</span><br><span class="line"><span class="comment">//等同于</span></span><br><span class="line">StudentDao dao = <span class="keyword">new</span> StudentDaoImpl();</span><br></pre></td></tr></table></figure>
-
-<p>在Test文件中使用代理查询数据：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testSelectById</span><span class="params">()</span></span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//获取sqlSession对象</span></span><br><span class="line">    SqlSession session = MyBatisUtil.getSqlSession();</span><br><span class="line">    <span class="comment">//获取Dao的代理</span></span><br><span class="line">    StudentDao dao =  session.getMapper(StudentDao.class);</span><br><span class="line">    <span class="comment">//调用dao的方法</span></span><br><span class="line">    Student student = dao.selectById(<span class="number">1005</span>);</span><br><span class="line">    <span class="comment">//输出传入的数据</span></span><br><span class="line">    System.out.println(<span class="string">&quot;查询的参数是&quot;</span>+student);</span><br><span class="line">    <span class="comment">//关闭sqlSession对象</span></span><br><span class="line">    session.close();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>运行截图：</p>
-<img src="images/image-20210801171110032.png">
-
-<p>运行成功！</p>
-<h3 id="理解参数"><a href="#理解参数" class="headerlink" title="理解参数"></a>理解参数</h3><p>理解参数是：通过java程序把数据传入到mapper文件中的sql语句中。参数主要是指Dao接口方法的形参。</p>
-<h4 id="ParameterType"><a href="#ParameterType" class="headerlink" title="ParameterType"></a>ParameterType</h4><p>ParameterType：表示参数的类型，指定Dao方法的形参数据类型。这个形参的数据类型是给mybatis使用。</p>
-<p>mybatis在给sql语句的参数赋值时使用。PreparedStatement.setXXX(位置，值)</p>
-<p>PreparedStatement pst = conn.preparedStatement(“select id,name,email,age from student where id = ?”)；</p>
-<p>给？位置赋值</p>
-<p>参数integer，执行pst.setInt(1,1005);</p>
-<p>参数是string，执行pst.setString(1.”1005”);</p>
-<p>第一个用法：java类型的全新定名称  parameterType = “java.long.Integer”</p>
-<p>第二个用法：mybatis定义的java类型别名” parameterType = “int”</p>
 <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;selectById&quot;</span> <span class="attr">parameterType</span>=<span class="string">&quot;int&quot;</span>  <span class="attr">resultType</span>=<span class="string">&quot;com.xienode.domain.Student&quot;</span>&gt;</span></span><br><span class="line">    select id,name,email,age from student where id = #&#123;studentId&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
+<p>resultType:现在使用java类型的全限定名称。表示的意思的mybatis执行sql，把resultType中的数据转为Student类型的对象。mybatis会做一下操作：<br>①调用com.xiecode.domain.Student的无参构造方法，创建对象。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Student student = <span class="keyword">new</span> Student();<span class="comment">//使用反射创建对象</span></span><br></pre></td></tr></table></figure>
 
+<p>②同名的列赋值给同名的属性</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">student.setId(rs.getInt(<span class="string">&quot;id&quot;</span>));</span><br><span class="line">Student.setName(rs.getString(<span class="string">&quot;name&quot;</span>));</span><br></pre></td></tr></table></figure>
 
-<h4 id="Dao接口方法是一个简单类型的参数"><a href="#Dao接口方法是一个简单类型的参数" class="headerlink" title="Dao接口方法是一个简单类型的参数"></a>Dao接口方法是一个简单类型的参数</h4><p>dao接口：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//dao接口的方法形参是一个简单的类型</span></span><br><span class="line"><span class="comment">//简单类型：java基本数据类型和字符串（String）</span></span><br><span class="line"><span class="function">Student <span class="title">selectByEmail</span><span class="params">(String email)</span></span>;</span><br></pre></td></tr></table></figure>
+<p>③得到java对象，如果dao接口返回值是List集合，mybatis把student对象放入List集合里面</p>
+<p>③得到java对象，如果dao接口返回值是List集合，mybatis把student对象放入List集合里面</p>
+<p>②同名的列赋值给同名的属性</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">student.setId(rs.getInt(<span class="string">&quot;id&quot;</span>));</span><br><span class="line">Student.setName(rs.getString(<span class="string">&quot;name&quot;</span>));</span><br></pre></td></tr></table></figure>
+<p>③得到java对象，如果dao接口返回值是List集合，mybatis把student对象放入List集合里面</p>
+<p>所以执行Student mystudent = dao.selectById(1001);得到数据库中 id=1001这行数据，这行数据的列值，付给了mystudent对象属性，你能得到mystudent对象，就相当于是 id=1001这行数据。</p>
+<h4 id="resultType：表示简单类型"><a href="#resultType：表示简单类型" class="headerlink" title="resultType：表示简单类型"></a>resultType：表示简单类型</h4><p>dao文件</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function">Long <span class="title">ccountStudent</span><span class="params">()</span></span>;</span><br></pre></td></tr></table></figure>
 
-<p>mapper文件：</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--</span></span><br><span class="line"><span class="comment">dao接口是一个简单类型的参数</span></span><br><span class="line"><span class="comment">mapper文件，获取这个参数值，使用的语法格式是#&#123;任意字符&#125;</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;selectByEmail&quot;</span> <span class="attr">parameterType</span>=<span class="string">&quot;string&quot;</span> <span class="attr">resultType</span>=<span class="string">&quot;com.xienode.domain.Student&quot;</span>&gt;</span></span><br><span class="line">    select id,name,email,age from student where email = #&#123;studentEmail&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>mapper文件</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--</span></span><br><span class="line"><span class="comment">执行sql语句得到的是一个值（一行一列）</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;ccountStudent&quot;</span> <span class="attr">resultType</span>=<span class="string">&quot;java.lang.Long&quot;</span>&gt;</span></span><br><span class="line">    select count(*) from student</span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<h4 id="dao接口有多个简单类型的参数"><a href="#dao接口有多个简单类型的参数" class="headerlink" title="dao接口有多个简单类型的参数"></a>dao接口有多个简单类型的参数</h4><p>@Param：命名参数，在方法的形参前面使用的，定义参数名。这个名称可以用在mapper文件中。</p>
-<p>dao接口方法的定义</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*多个简单类型参数</span></span><br><span class="line"><span class="comment">* 使用@Param命名参数，注解是mybatis提供的</span></span><br><span class="line"><span class="comment">* 位置：在形参前面</span></span><br><span class="line"><span class="comment">* 属性：value 自定义的参数名称</span></span><br><span class="line"><span class="comment">* */</span></span><br><span class="line"><span class="function">List&lt;Student&gt; <span class="title">selectNameOrAge</span><span class="params">(<span class="meta">@Param(&quot;myname&quot;)</span> String name,</span></span></span><br><span class="line"><span class="function"><span class="params">                              <span class="meta">@Param(&quot;myage&quot;)</span> Integer age)</span></span>;</span><br></pre></td></tr></table></figure>
-
-<p>命名参数的写法：mapper文件</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--当多个简单类型的参数，当使用了@Param命名后，例如@param(&quot;myname&quot;),在mapper中，使用#&#123;命名的参数&#125;，例如#&#123;myname&#125;</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;selectNameOrAge&quot;</span> <span class="attr">resultType</span>=<span class="string">&quot;com.xienode.domain.Student&quot;</span>&gt;</span></span><br><span class="line">    select id,name,email,age from student where name = #&#123;myname&#125; or age = #&#123;myage&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="dao接口方法使用一个对象作为参数"><a href="#dao接口方法使用一个对象作为参数" class="headerlink" title="dao接口方法使用一个对象作为参数"></a>dao接口方法使用一个对象作为参数</h4><p>方法的形参是一个java对象，这个java对象表示多个参数。使用对象的属性值作为参数使用</p>
-<p>java对象的定义:</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Student</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> Integer id;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="keyword">private</span> String email;</span><br><span class="line">    <span class="keyword">private</span> Integer age;</span><br><span class="line">    <span class="comment">//set,get方法</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">QueryParam</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> Object p1;</span><br><span class="line">    <span class="keyword">private</span> Object p2;</span><br><span class="line">    <span class="comment">//set,get方法</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>dao接口中的定义：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*一个java对象最为参数(对象由属性，每个属性有set，get方法)*/</span></span><br><span class="line"></span><br><span class="line"><span class="function">List&lt;Student&gt; <span class="title">selectByObject</span><span class="params">(Student student)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="function">List&lt;Student&gt; <span class="title">selectByQueryParam</span> <span class="params">(QueryParam param)</span></span>;</span><br></pre></td></tr></table></figure>
-
-<p>mapper文件：</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">    <span class="comment">&lt;!--</span></span><br><span class="line"><span class="comment">    一个java对象作为方法的参数，使用对象的属性作为参数值使用</span></span><br><span class="line"><span class="comment">    简单的语法：#&#123;属性名&#125;，mybatis调用此属性的getXXX()方法获取属性值</span></span><br><span class="line"><span class="comment">    --&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;selectByObject&quot;</span> <span class="attr">resultType</span>=<span class="string">&quot;com.xienode.domain.Student&quot;</span>&gt;</span></span><br><span class="line">        select id,name,email,age from student where name = #&#123;name&#125; or age = #&#123;age&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;selectByQueryParam&quot;</span> <span class="attr">resultType</span>=<span class="string">&quot;com.xienode.domain.Student&quot;</span>&gt;</span></span><br><span class="line">    select id,name,email,age from student where name = #&#123;p1&#125; or age = #&#123;p2&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="dao接口中多个简单类型的参数，使用位置"><a href="#dao接口中多个简单类型的参数，使用位置" class="headerlink" title="dao接口中多个简单类型的参数，使用位置"></a>dao接口中多个简单类型的参数，使用位置</h4><p>参数位置：dao接口中方法的形参列表，从左往右，参数位置是0,1,2……</p>
-<p>语法格式：#{arg0}，#{arg1}</p>
-<p> dao接口：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*使用位置获取参数*/</span></span><br><span class="line"><span class="function">List&lt;Student&gt; <span class="title">selectByPosition</span><span class="params">(String name, Integer age)</span></span>;</span><br></pre></td></tr></table></figure>
-
-<p>mapper文件:</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;selectByPosition&quot;</span> <span class="attr">resultType</span>=<span class="string">&quot;com.xienode.domain.Student&quot;</span>&gt;</span></span><br><span class="line">    select id,name,email,age from student where name = #&#123;arg0&#125; or age = #&#123;arg1&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="和-符号的区别"><a href="#和-符号的区别" class="headerlink" title="#和$符号的区别"></a>#和$符号的区别</h2><h3 id="“-”-占位符"><a href="#“-”-占位符" class="headerlink" title="“#” 占位符"></a>“#” 占位符</h3><p>语法：#{字符}</p>
-<p>mybatis处理#{}使用jdbc对象是PrepareStatment对象</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;selectById&quot;</span> <span class="attr">parameterType</span>=<span class="string">&quot;int&quot;</span>  <span class="attr">resultType</span>=<span class="string">&quot;com.xienode.domain.Student&quot;</span>&gt;</span></span><br><span class="line">    select id,name,email,age from student where id = #&#123;studentId&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">mybatis创建prepareStatement对象，执行qsl语句</span><br><span class="line">Srting sql=&quot;select id,name,email,age from student where id = ?&quot;;</span><br><span class="line">PrepareStatement pst = conn.prepareStatement(sql);</span><br><span class="line">pst.setInt(1,1001);  //传递参数</span><br><span class="line">ResultSet rs = pst.executeQuery();	//执行sql语句</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>#{}特点：</p>
-<p>①使用的PrepareStatement对象，执行sql语句，效率高。</p>
-<p>②使用的PrepareStatement对象，能避险sql语句，sql语句执行更安全。</p>
-<p>③#{}常常作为列值使用的，位于等于号的右侧，#{}位置的值的数据类型有关的。</p>
-<h3 id="“-”占位符"><a href="#“-”占位符" class="headerlink" title="“$”占位符"></a>“$”占位符</h3><p>语法：${字符}</p>
-<p>mybatis执行${}占位符的sql语句</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;selectById&quot;</span> <span class="attr">parameterType</span>=<span class="string">&quot;int&quot;</span>  <span class="attr">resultType</span>=<span class="string">&quot;com.xienode.domain.Student&quot;</span>&gt;</span></span><br><span class="line">    select id,name,email,age from student where id = $&#123;studentId&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line"></span><br><span class="line">$&#123;&#125; 表示字符串的连接，把sql语句的其他内容和$&#123;&#125;内容使用 字节串（+） 连接的方式连接在一起</span><br><span class="line">String sql = &quot;select id,name,email,age from student where id =&quot; + &quot;1001&quot;</span><br><span class="line"></span><br><span class="line">mybatis创建Statement对象，执行sql语句。</span><br><span class="line">Statement stmt = conn.createStatement(sql);</span><br><span class="line">ResultSet rs = stmt.executeQuery();</span><br></pre></td></tr></table></figure>
-
-<p>${}的特点：</p>
-<p>①使用Statement对象，执行sql语句，效率低。</p>
-<p>②${}占位符的值，使用的字符串连接方式，有sql注入的风险。有代码安全的问题。</p>
-<p>③${}数据是原样使用的，不会区分数据类型。</p>
-<p>④${}常用作列名或者表名，能在保证数据安全的情况下使用${}。</p>
-<h3 id="占位符的使用举例"><a href="#占位符的使用举例" class="headerlink" title="${}占位符的使用举例"></a>${}占位符的使用举例</h3><p>dao接口</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//使用$&#123;&#125;来对查询进行排序</span></span><br><span class="line"><span class="function">List&lt;Student&gt; <span class="title">queryStudentOrderByColName</span><span class="params">(<span class="meta">@Param(&quot;Colname&quot;)</span> String name)</span></span>;</span><br></pre></td></tr></table></figure>
-
-<p>mapper文件：</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;queryStudentOrderByColName&quot;</span> <span class="attr">resultType</span>=<span class="string">&quot;com.xienode.domain.Student&quot;</span>&gt;</span></span><br><span class="line">    select * from student order by $&#123;Colname&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>test执行文件</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testCountStudent</span><span class="params">()</span></span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//获取sqlSession对象</span></span><br><span class="line">    SqlSession session = MyBatisUtil.getSqlSession();</span><br><span class="line">    <span class="comment">//获取Dao的代理</span></span><br><span class="line">    StudentDao dao =  session.getMapper(StudentDao.class);</span><br><span class="line">    <span class="comment">//调用dao的方法</span></span><br><span class="line">    <span class="keyword">long</span> nums = dao.ccountStudent();</span><br><span class="line">    <span class="comment">//输出传入的数据</span></span><br><span class="line">    System.out.println(<span class="string">&quot;nums=&quot;</span>+nums);</span><br><span class="line">    <span class="comment">//关闭sqlSession对象</span></span><br><span class="line">    session.close();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
 
-<p>java测试文件里面：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testQueryStudentOrderByColName</span><span class="params">()</span></span>&#123;</span><br><span class="line">    SqlSession sqlSession = MyBatisUtil.getSqlSession();</span><br><span class="line">    StudentDao dao = sqlSession.getMapper(StudentDao.class);</span><br><span class="line">    <span class="comment">/*按位置传递参数*/</span></span><br><span class="line">    <span class="comment">//选择属性进行排序</span></span><br><span class="line">    List&lt;Student&gt; students = dao.queryStudentOrderByColName(<span class="string">&quot;email&quot;</span>);<span class="comment">//在这里可以选择“age”，“name”，“email”和“id”</span></span><br><span class="line">    students.forEach(student1 -&gt; System.out.println(<span class="string">&quot;stu&quot;</span>+student1));</span><br><span class="line">    sqlSession.close();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="resultType：表示一个mapper结构"><a href="#resultType：表示一个mapper结构" class="headerlink" title="resultType：表示一个mapper结构"></a>resultType：表示一个mapper结构</h4><p>dao接口</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//查询返回结果是一个map</span></span><br><span class="line"><span class="function">Map&lt;Object,Object&gt; <span class="title">selectMap</span><span class="params">(<span class="meta">@Param(&quot;stuid&quot;)</span> Integer id)</span></span>;</span><br></pre></td></tr></table></figure>
 
-<p>执行结果：</p>
-<img src="images/image-20210812091932093.png">
+<p>mapper文件</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--</span></span><br><span class="line"><span class="comment">执行sql语句得到一个map数据结构，mybatis执行sql，把ResultSet转换为map</span></span><br><span class="line"><span class="comment">sql执行结果：列名作为map的key，列值作为value。</span></span><br><span class="line"><span class="comment">sql执行得到的是一行记录，得到的map结构是正确的.</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">dao接口返回是一个map，sql语句最多能获取一行记录，多于一行是错误的</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;selectMap&quot;</span> <span class="attr">resultType</span>=<span class="string">&quot;java.util.Map&quot;</span>&gt;</span></span><br><span class="line">    select id,name from student where id = #&#123;stuid&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 
 
-<p>附：在运行时出现如下的错误时：“It’s likely that neither a Result Type nor a Result Map was specified.”</p>
-<p>原因为：在mapper文件里面将ResultType写成了parameterType，改回去就好了。</p>
-<img src="images/image-20210811220437881.png">]]></content>
-      <categories>
-        <category>mybatis</category>
-      </categories>
-      <tags>
-        <tag>学习心得</tag>
-        <tag>mybatis</tag>
-      </tags>
+<h3 id="resultMap"><a href="#resultMap" class="headerlink" title="resultMap"></a>resultMap</h3><p>resultMap：结果映射。自定义列名和java对象属性的对应关系。常用在列名和属性名不同的情况下。</p>
+<p>用法：</p>
+<p>①先定义resultMap标签，指定列名和属性名称对应关系。</p>
+<p>②在select标签使用resultMap属性，指定书目定义的resultMap的名称Id值。</p>
+<p>dao接口</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//查询返回结果是一个map</span></span><br><span class="line"><span class="function">Map&lt;Object,Object&gt; <span class="title">selectMap</span><span class="params">(<span class="meta">@Param(&quot;stuid&quot;)</span> Integer id)</span></span>;</span><br></pre></td></tr></table></figure>
+
+<p>mapper文件</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--使用resultMap定义列和属性的关系--&gt;</span></span><br><span class="line"><span class="comment">&lt;!--定义resultMap--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">resultMap</span> <span class="attr">id</span>=<span class="string">&quot;CustomMap&quot;</span> <span class="attr">type</span>=<span class="string">&quot;com.xienode.vo.CustomObject&quot;</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--定义列名和属性名的对应关系--&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--主键列使用id标签--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">id</span> <span class="attr">column</span>=<span class="string">&quot;id&quot;</span> <span class="attr">property</span>=<span class="string">&quot;cid&quot;</span> /&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--非主键使用result标签--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">result</span> <span class="attr">column</span>=<span class="string">&quot;name&quot;</span> <span class="attr">property</span>=<span class="string">&quot;cname&quot;</span>/&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--列名和属性名相同，不用配置--&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">resultMap</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--使用resultMap属性，指定映射关系的Id</span></span><br><span class="line"><span class="comment">    resultMap和resultType是二选一使用。</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;selectCusById&quot;</span> <span class="attr">resultMap</span>=<span class="string">&quot;CustomMap&quot;</span>&gt;</span></span><br><span class="line">    select * from student where id = #&#123;stuid&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="自定义别名"><a href="#自定义别名" class="headerlink" title="自定义别名"></a>自定义别名</h2><p>mybatis提供的对java类型定义简短，好记名称。</p>
+<p>自定义的步骤：</p>
+<p>①在mybatis的主配置文件，使用typeAliase标签声明别名</p>
+<p>声明别名：写在主配置文件中：</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">typeAliases</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--第一种语法格式</span></span><br><span class="line"><span class="comment">        type:java类型全限定名称</span></span><br><span class="line"><span class="comment">        alias：自定义别名</span></span><br><span class="line"><span class="comment">    --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">typeAlias</span> <span class="attr">type</span>=<span class="string">&quot;com.xienode.domain.Student&quot;</span> <span class="attr">alias</span>=<span class="string">&quot;stu&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">typeAliases</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>②在mapper文件中，resultType=“别名”</p>
+<p>在mapper文件中使用：</p>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">&lt;select id=<span class="string">&quot;selectById&quot;</span> parameterType=<span class="string">&quot;int&quot;</span>  resultType=<span class="string">&quot;stu&quot;</span>&gt;</span><br><span class="line">    select id,name,email,age from student where id = #&#123;studentId&#125;</span><br><span class="line">&lt;/select&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="列名和java对象名属性名称不同的解决方案"><a href="#列名和java对象名属性名称不同的解决方案" class="headerlink" title="列名和java对象名属性名称不同的解决方案"></a>列名和java对象名属性名称不同的解决方案</h2><p>①使用resultMap：自定义列名和属性名称</p>
+<p>②使用resultType：使用别名，让别名和java对象属性一样</p>
+<h2 id="Like"><a href="#Like" class="headerlink" title="Like"></a>Like</h2><p>第一种方式：在java程序中，把like内容组装好，把这个内容传入到sql语句中。</p>
+<p>dao接口</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*like的第一种方式*/</span></span><br><span class="line"><span class="function">List&lt;Student&gt; <span class="title">studentLikeOne</span><span class="params">(<span class="meta">@Param(&quot;name&quot;)</span> String name)</span></span>;</span><br></pre></td></tr></table></figure>
+
+<p>mapper文件</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--like的第一种方式--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;studentLikeOne&quot;</span> <span class="attr">resultType</span>=<span class="string">&quot;com.xienode.domain.Student&quot;</span>&gt;</span></span><br><span class="line">    select id, name , email,age from student where name like #&#123;name&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>执行like</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testLikeOne</span><span class="params">()</span></span>&#123;</span><br><span class="line">    SqlSession session = MyBatisUtil.getSqlSession();</span><br><span class="line">    StudentDao dao = session.getMapper(StudentDao.class);</span><br><span class="line"></span><br><span class="line">    String name = <span class="string">&quot;%小%&quot;</span>;</span><br><span class="line">    List&lt;Student&gt; students = dao.studentLikeOne(name);</span><br><span class="line">    students.forEach(student -&gt; System.out.println(student));</span><br><span class="line">    session.close();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>第二种方式：在sql语句中组织like的内容</p>
+<p>sql语句like的格式： where name like “%”空格#{}空格”%”</p>
+<p>dao接口</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function">List&lt;Student&gt; <span class="title">studentLikeTwo</span><span class="params">(<span class="meta">@Param(&quot;name&quot;)</span> String name)</span></span>;</span><br></pre></td></tr></table></figure>
+
+<p>mapper文件</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--like的第二种方式--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;studentLikeTwo&quot;</span> <span class="attr">resultType</span>=<span class="string">&quot;com.xienode.domain.Student&quot;</span>&gt;</span></span><br><span class="line">    select id, name , email,age from student where name like &quot;%&quot; #&#123;name&#125; &quot;%&quot;</span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>执行like</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testLikeTwo</span><span class="params">()</span></span>&#123;</span><br><span class="line">    SqlSession session = MyBatisUtil.getSqlSession();</span><br><span class="line">    StudentDao dao = session.getMapper(StudentDao.class);</span><br><span class="line"></span><br><span class="line">    String name = <span class="string">&quot;小&quot;</span>;</span><br><span class="line">    List&lt;Student&gt; students = dao.studentLikeTwo(name);</span><br><span class="line">    students.forEach(student -&gt; System.out.println(student));</span><br><span class="line">    session.close();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
   </entry>
   <entry>
     <title>Mybatis框架学习Day05</title>
     <url>/Mybatis%E6%A1%86%E6%9E%B6%E5%AD%A6%E4%B9%A0Day05.html</url>
     <content><![CDATA[<h2 id="MyBatis框架动态SQL"><a href="#MyBatis框架动态SQL" class="headerlink" title="MyBatis框架动态SQL"></a>MyBatis框架动态SQL</h2><p>什么是动态sql：同一个dao方法，根据不同的条件可以表示不同的sql语句，主要where部分有变化</p>
 <p>使用mybatis提供的标签，实现动态sql的能力。主要学习if，where,foreach,sql。</p>
+<span id="more"></span>
+
 <p>使用动态sql的时候，dao方法的形参使用java对象。</p>
 <p>什么时候使用动态sql：</p>
-<p><img src="C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20210815115800999.png" alt="image-20210815115800999"></p>
+<img src="images/image-20210815115800999.png">
+
+
+
 <p>在mapper文件中使用大于，小于或等于符号最好将其转化为实体符号，否则XML可能会出现解析出错的问题。</p>
 <table>
 <thead>
@@ -726,6 +817,8 @@
     <content><![CDATA[<h2 id="MyBatis配置文件"><a href="#MyBatis配置文件" class="headerlink" title="MyBatis配置文件"></a>MyBatis配置文件</h2><p>MyBatis配置文件两大类：①Mybatis主配置文件；②MyBatis的mapper文件</p>
 <p>一：Mybatis主配置文件，提供MyBatis主配置文件，提供MyBatis全局设置的，包含的内容，数据源，mapper文件位置。</p>
 <p>二：mapper文件：写sql语句的。一个表一个mapper文件</p>
+<span id="more"></span>
+
 <h3 id="settings部分"><a href="#settings部分" class="headerlink" title="settings部分"></a>settings部分</h3><p>settings是mybatis的全局设置，影响整个mybatis的运行。这个设置一般使用默认值就可以了。 </p>
 <h3 id="别名部分"><a href="#别名部分" class="headerlink" title="别名部分"></a>别名部分</h3><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">    <span class="tag">&lt;<span class="name">typeAliases</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!--第一种语法格式</span></span><br><span class="line"><span class="comment">            type:java类型全限定名称</span></span><br><span class="line"><span class="comment">            alias：自定义别名</span></span><br><span class="line"><span class="comment">            优点：自定义别名</span></span><br><span class="line"><span class="comment">            缺点：每个类型必须单独定义</span></span><br><span class="line"><span class="comment">        --&gt;</span></span><br><span class="line"><span class="comment">&lt;!--        &lt;typeAlias type=&quot;com.xienode.domain.Student&quot; alias=&quot;stu&quot; /&gt;--&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">&lt;!--</span></span><br><span class="line"><span class="comment">        第二种方式</span></span><br><span class="line"><span class="comment">        name：包名，mybatis会把这个所有的类作为别名（不用区分大小写）</span></span><br><span class="line"><span class="comment">        优点：使用方便，一次给多个类定义别名</span></span><br><span class="line"><span class="comment">        缺点：别名不能自定义，必须是类名。</span></span><br><span class="line"><span class="comment">        --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">package</span> <span class="attr">name</span>=<span class="string">&quot;com.xienode.domain&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
 
@@ -780,13 +873,15 @@
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testSelectHelper</span><span class="params">()</span></span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//获取sqlSession对象</span></span><br><span class="line">    SqlSession session = MyBatisUtil.getSqlSession();</span><br><span class="line">    <span class="comment">//获取Dao的代理</span></span><br><span class="line">    StudentDao dao =  session.getMapper(StudentDao.class);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//调用pageHelper的方法</span></span><br><span class="line">    PageHelper.startPage(<span class="number">1</span>, <span class="number">3</span>);</span><br><span class="line"></span><br><span class="line">    List&lt;Student&gt; students = dao.selectAllStudent();</span><br><span class="line">    students.forEach(System.out::println);</span><br><span class="line">    <span class="comment">//关闭sqlSession对象</span></span><br><span class="line">    session.close();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>运行结果：</p>
-<p><img src="C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20210818161138174.png" alt="image-20210818161138174"></p>
+<img src="images/image-20210818161138174.png">
 ]]></content>
   </entry>
   <entry>
     <title>spring框架学习Day02</title>
     <url>/spring%E6%A1%86%E6%9E%B6%E5%AD%A6%E4%B9%A0Day02.html</url>
     <content><![CDATA[<h2 id="IOC控制反转"><a href="#IOC控制反转" class="headerlink" title="IOC控制反转"></a>IOC控制反转</h2><h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><p>控制反转（IOC，Inversion of Control），是一个概念，是一种思想。指导开发人员如何适用对象，管理对象的。把对象的创建，属性赋值，对象的声明周期都交给代码之外的容器管理。</p>
+<span id="more"></span>
+
 <h4 id="IOC分为-控制和反转"><a href="#IOC分为-控制和反转" class="headerlink" title="IOC分为 控制和反转"></a>IOC分为 控制和反转</h4><p>​    控制：对象创建，属性赋值，对象的周期管理。</p>
 <p>​    反转：把开发人员管理对象的权限转移给了代码之外的容器实现。由容器完成对象的管理。</p>
 <p>​    正转：开发人员在代码中，使用new构造方法创建对象。开发人员掌握了对象的创建，属性赋值，对象从开始到销毁的全部过程。开发人员对 对象的全部控制。</p>
@@ -832,8 +927,12 @@
 <p>spring核心技术：IOC，AOP</p>
 <p>spring又叫做容器。spring作为容器，装的是java对象，给属性赋值。</p>
 <p>spring作用：实现解耦合，解决java对象之间的耦合，解决模块之间的耦合。</p>
+<span id="more"></span>
+
+
 <h3 id="spring的地址"><a href="#spring的地址" class="headerlink" title="spring的地址"></a>spring的地址</h3><p><a href="https://spring.io/">https://spring.io</a></p>
-<h3 id="spring的体系结构"><a href="#spring的体系结构" class="headerlink" title="spring的体系结构"></a>spring的体系结构</h3><p><img src="C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20210911120712295.png" alt="image-20210911120712295"></p>
+<h3 id="spring的体系结构"><a href="#spring的体系结构" class="headerlink" title="spring的体系结构"></a>spring的体系结构</h3><img src="images/image-20210911120712295.png">
+
 <p>Spring 由 20 多个模块组成，它们可以分为数据访问/集成（Data Access/Integration）、Web、面向切面编程（AOP, Aspects）、提供 JVM 的代理（Instrumentation）、消息发送（Messaging）、核心容器（Core Container）和测试（Test）。</p>
 <h2 id="spring优点"><a href="#spring优点" class="headerlink" title="spring优点"></a>spring优点</h2><p>Spring 是一个框架，是一个半成品的软件。有 20 个模块组成。它是一个 容器管理对象，容器是装东西的，Spring 容器不装文本，数字。装的是对象。 Spring 是存储对象的容器。</p>
 <p> （1） 轻量 Spring 框架使用的 jar 都比较小，一般在 1M 以下或者几百 kb。Spring 核心功能的所需的 jar 总共在 3M 左右。 Spring 框架运行占用的资源少，运行效率高。不依赖其他 jar包。</p>

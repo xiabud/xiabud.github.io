@@ -23,15 +23,15 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","version":"8.2.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":false,"lazyload":false,"nav":null},"motion":{"enable":true,"async":true,"transition":{"post_block":"bounceln","post_header":"shake","post_body":"pulse","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
-<meta name="description" content="夏步D的博客，分享在编程或者编曲过程中解决问题所产生的心得，分享编程和编曲的文件。同时偶尔感慨生活，谈谈身边的事儿和感受！">
+<meta name="description" content="封装Mybatis输出结果封装输出结果：Mybatis执行sql语句，得到ResultSet，转化为java对象。 讲两个：resultType和resultMap resultTyperesultType：表示java的自定义对象resultType属性：在执行select时使用，作为select标签的属性出现的 resultType:表示结果类型，mysql执行sql语句，得到java对象的类">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Mybatis框架学习Day04">
+<meta property="og:title" content="夏步D的博客">
 <meta property="og:url" content="http://example.com/Mybatis%E6%A1%86%E6%9E%B6%E5%AD%A6%E4%B9%A0Day04.html">
 <meta property="og:site_name" content="夏步D的博客">
-<meta property="og:description" content="夏步D的博客，分享在编程或者编曲过程中解决问题所产生的心得，分享编程和编曲的文件。同时偶尔感慨生活，谈谈身边的事儿和感受！">
+<meta property="og:description" content="封装Mybatis输出结果封装输出结果：Mybatis执行sql语句，得到ResultSet，转化为java对象。 讲两个：resultType和resultMap resultTyperesultType：表示java的自定义对象resultType属性：在执行select时使用，作为select标签的属性出现的 resultType:表示结果类型，mysql执行sql语句，得到java对象的类">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-08-22T14:09:39.000Z">
-<meta property="article:modified_time" content="2021-08-22T14:09:39.651Z">
+<meta property="article:published_time" content="2021-08-21T16:00:00.000Z">
+<meta property="article:modified_time" content="2021-10-22T09:41:14.378Z">
 <meta property="article:author" content="夏步D">
 <meta property="article:tag" content="Music production, Orchestration, Synthesizer, Programming, java, web">
 <meta name="twitter:card" content="summary">
@@ -49,7 +49,7 @@
     lang   : 'zh-CN'
   };
 </script>
-<title>Mybatis框架学习Day04 | 夏步D的博客</title>
+<title> | 夏步D的博客</title>
   
 
 
@@ -174,7 +174,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -187,6 +187,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B0%81%E8%A3%85Mybatis%E8%BE%93%E5%87%BA%E7%BB%93%E6%9E%9C"><span class="nav-number">1.</span> <span class="nav-text">封装Mybatis输出结果</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#resultType"><span class="nav-number">1.1.</span> <span class="nav-text">resultType</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#resultType%EF%BC%9A%E8%A1%A8%E7%A4%BAjava%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E5%AF%B9%E8%B1%A1"><span class="nav-number">1.1.1.</span> <span class="nav-text">resultType：表示java的自定义对象</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#resultType%EF%BC%9A%E8%A1%A8%E7%A4%BA%E7%AE%80%E5%8D%95%E7%B1%BB%E5%9E%8B"><span class="nav-number">1.1.2.</span> <span class="nav-text">resultType：表示简单类型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#resultType%EF%BC%9A%E8%A1%A8%E7%A4%BA%E4%B8%80%E4%B8%AAmapper%E7%BB%93%E6%9E%84"><span class="nav-number">1.1.3.</span> <span class="nav-text">resultType：表示一个mapper结构</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#resultMap"><span class="nav-number">1.2.</span> <span class="nav-text">resultMap</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E5%88%AB%E5%90%8D"><span class="nav-number">2.</span> <span class="nav-text">自定义别名</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%97%E5%90%8D%E5%92%8Cjava%E5%AF%B9%E8%B1%A1%E5%90%8D%E5%B1%9E%E6%80%A7%E5%90%8D%E7%A7%B0%E4%B8%8D%E5%90%8C%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88"><span class="nav-number">3.</span> <span class="nav-text">列名和java对象名属性名称不同的解决方案</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Like"><span class="nav-number">4.</span> <span class="nav-text">Like</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -276,7 +277,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Mybatis框架学习Day04
+          
         </h1>
 
         <div class="post-meta-container">
@@ -287,11 +288,18 @@
       </span>
       <span class="post-meta-item-text">发表于</span>
 
-      <time title="创建时间：2021-08-22 22:09:39" itemprop="dateCreated datePublished" datetime="2021-08-22T22:09:39+08:00">2021-08-22</time>
+      <time title="创建时间：2021-08-22 00:00:00" itemprop="dateCreated datePublished" datetime="2021-08-22T00:00:00+08:00">2021-08-22</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-10-22 17:41:14" itemprop="dateModified" datetime="2021-10-22T17:41:14+08:00">2021-10-22</time>
+      </span>
 
   
-    <span id="/Mybatis%E6%A1%86%E6%9E%B6%E5%AD%A6%E4%B9%A0Day04.html" class="post-meta-item leancloud_visitors" data-flag-title="Mybatis框架学习Day04" title="阅读次数">
+    <span id="/Mybatis%E6%A1%86%E6%9E%B6%E5%AD%A6%E4%B9%A0Day04.html" class="post-meta-item leancloud_visitors" data-flag-title="" title="阅读次数">
       <span class="post-meta-item-icon">
         <i class="far fa-eye"></i>
       </span>
@@ -307,7 +315,93 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        
+        <h2 id="封装Mybatis输出结果"><a href="#封装Mybatis输出结果" class="headerlink" title="封装Mybatis输出结果"></a>封装Mybatis输出结果</h2><p>封装输出结果：Mybatis执行sql语句，得到ResultSet，转化为java对象。</p>
+<p>讲两个：resultType和resultMap</p>
+<h3 id="resultType"><a href="#resultType" class="headerlink" title="resultType"></a>resultType</h3><h4 id="resultType：表示java的自定义对象"><a href="#resultType：表示java的自定义对象" class="headerlink" title="resultType：表示java的自定义对象"></a>resultType：表示java的自定义对象</h4><p>resultType属性：在执行select时使用，作为select标签的属性出现的</p>
+<p>resultType:表示结果类型，mysql执行sql语句，得到java对象的类型。它的值有两种</p>
+<p>①java全限定名称</p>
+<p>②使用别名</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">Student <span class="title">selectById</span><span class="params">(Intger id)</span></span>;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;selectById&quot;</span> <span class="attr">parameterType</span>=<span class="string">&quot;int&quot;</span>  <span class="attr">resultType</span>=<span class="string">&quot;com.xienode.domain.Student&quot;</span>&gt;</span></span><br><span class="line">    select id,name,email,age from student where id = #&#123;studentId&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>resultType:现在使用java类型的全限定名称。表示的意思的mybatis执行sql，把resultType中的数据转为Student类型的对象。mybatis会做一下操作：<br>①调用com.xiecode.domain.Student的无参构造方法，创建对象。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Student student = <span class="keyword">new</span> Student();<span class="comment">//使用反射创建对象</span></span><br></pre></td></tr></table></figure>
+
+<p>②同名的列赋值给同名的属性</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">student.setId(rs.getInt(<span class="string">&quot;id&quot;</span>));</span><br><span class="line">Student.setName(rs.getString(<span class="string">&quot;name&quot;</span>));</span><br></pre></td></tr></table></figure>
+
+<p>③得到java对象，如果dao接口返回值是List集合，mybatis把student对象放入List集合里面</p>
+<p>③得到java对象，如果dao接口返回值是List集合，mybatis把student对象放入List集合里面</p>
+<p>②同名的列赋值给同名的属性</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">student.setId(rs.getInt(<span class="string">&quot;id&quot;</span>));</span><br><span class="line">Student.setName(rs.getString(<span class="string">&quot;name&quot;</span>));</span><br></pre></td></tr></table></figure>
+<p>③得到java对象，如果dao接口返回值是List集合，mybatis把student对象放入List集合里面</p>
+<p>所以执行Student mystudent = dao.selectById(1001);得到数据库中 id=1001这行数据，这行数据的列值，付给了mystudent对象属性，你能得到mystudent对象，就相当于是 id=1001这行数据。</p>
+<h4 id="resultType：表示简单类型"><a href="#resultType：表示简单类型" class="headerlink" title="resultType：表示简单类型"></a>resultType：表示简单类型</h4><p>dao文件</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">Long <span class="title">ccountStudent</span><span class="params">()</span></span>;</span><br></pre></td></tr></table></figure>
+
+<p>mapper文件</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--</span></span><br><span class="line"><span class="comment">执行sql语句得到的是一个值（一行一列）</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;ccountStudent&quot;</span> <span class="attr">resultType</span>=<span class="string">&quot;java.lang.Long&quot;</span>&gt;</span></span><br><span class="line">    select count(*) from student</span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>test执行文件</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testCountStudent</span><span class="params">()</span></span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//获取sqlSession对象</span></span><br><span class="line">    SqlSession session = MyBatisUtil.getSqlSession();</span><br><span class="line">    <span class="comment">//获取Dao的代理</span></span><br><span class="line">    StudentDao dao =  session.getMapper(StudentDao.class);</span><br><span class="line">    <span class="comment">//调用dao的方法</span></span><br><span class="line">    <span class="keyword">long</span> nums = dao.ccountStudent();</span><br><span class="line">    <span class="comment">//输出传入的数据</span></span><br><span class="line">    System.out.println(<span class="string">&quot;nums=&quot;</span>+nums);</span><br><span class="line">    <span class="comment">//关闭sqlSession对象</span></span><br><span class="line">    session.close();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="resultType：表示一个mapper结构"><a href="#resultType：表示一个mapper结构" class="headerlink" title="resultType：表示一个mapper结构"></a>resultType：表示一个mapper结构</h4><p>dao接口</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//查询返回结果是一个map</span></span><br><span class="line"><span class="function">Map&lt;Object,Object&gt; <span class="title">selectMap</span><span class="params">(<span class="meta">@Param(&quot;stuid&quot;)</span> Integer id)</span></span>;</span><br></pre></td></tr></table></figure>
+
+<p>mapper文件</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--</span></span><br><span class="line"><span class="comment">执行sql语句得到一个map数据结构，mybatis执行sql，把ResultSet转换为map</span></span><br><span class="line"><span class="comment">sql执行结果：列名作为map的key，列值作为value。</span></span><br><span class="line"><span class="comment">sql执行得到的是一行记录，得到的map结构是正确的.</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">dao接口返回是一个map，sql语句最多能获取一行记录，多于一行是错误的</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;selectMap&quot;</span> <span class="attr">resultType</span>=<span class="string">&quot;java.util.Map&quot;</span>&gt;</span></span><br><span class="line">    select id,name from student where id = #&#123;stuid&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="resultMap"><a href="#resultMap" class="headerlink" title="resultMap"></a>resultMap</h3><p>resultMap：结果映射。自定义列名和java对象属性的对应关系。常用在列名和属性名不同的情况下。</p>
+<p>用法：</p>
+<p>①先定义resultMap标签，指定列名和属性名称对应关系。</p>
+<p>②在select标签使用resultMap属性，指定书目定义的resultMap的名称Id值。</p>
+<p>dao接口</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//查询返回结果是一个map</span></span><br><span class="line"><span class="function">Map&lt;Object,Object&gt; <span class="title">selectMap</span><span class="params">(<span class="meta">@Param(&quot;stuid&quot;)</span> Integer id)</span></span>;</span><br></pre></td></tr></table></figure>
+
+<p>mapper文件</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--使用resultMap定义列和属性的关系--&gt;</span></span><br><span class="line"><span class="comment">&lt;!--定义resultMap--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">resultMap</span> <span class="attr">id</span>=<span class="string">&quot;CustomMap&quot;</span> <span class="attr">type</span>=<span class="string">&quot;com.xienode.vo.CustomObject&quot;</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--定义列名和属性名的对应关系--&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--主键列使用id标签--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">id</span> <span class="attr">column</span>=<span class="string">&quot;id&quot;</span> <span class="attr">property</span>=<span class="string">&quot;cid&quot;</span> /&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--非主键使用result标签--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">result</span> <span class="attr">column</span>=<span class="string">&quot;name&quot;</span> <span class="attr">property</span>=<span class="string">&quot;cname&quot;</span>/&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--列名和属性名相同，不用配置--&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">resultMap</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--使用resultMap属性，指定映射关系的Id</span></span><br><span class="line"><span class="comment">    resultMap和resultType是二选一使用。</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;selectCusById&quot;</span> <span class="attr">resultMap</span>=<span class="string">&quot;CustomMap&quot;</span>&gt;</span></span><br><span class="line">    select * from student where id = #&#123;stuid&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="自定义别名"><a href="#自定义别名" class="headerlink" title="自定义别名"></a>自定义别名</h2><p>mybatis提供的对java类型定义简短，好记名称。</p>
+<p>自定义的步骤：</p>
+<p>①在mybatis的主配置文件，使用typeAliase标签声明别名</p>
+<p>声明别名：写在主配置文件中：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">typeAliases</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--第一种语法格式</span></span><br><span class="line"><span class="comment">        type:java类型全限定名称</span></span><br><span class="line"><span class="comment">        alias：自定义别名</span></span><br><span class="line"><span class="comment">    --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">typeAlias</span> <span class="attr">type</span>=<span class="string">&quot;com.xienode.domain.Student&quot;</span> <span class="attr">alias</span>=<span class="string">&quot;stu&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">typeAliases</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>②在mapper文件中，resultType=“别名”</p>
+<p>在mapper文件中使用：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;select id=<span class="string">&quot;selectById&quot;</span> parameterType=<span class="string">&quot;int&quot;</span>  resultType=<span class="string">&quot;stu&quot;</span>&gt;</span><br><span class="line">    select id,name,email,age from student where id = #&#123;studentId&#125;</span><br><span class="line">&lt;/select&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="列名和java对象名属性名称不同的解决方案"><a href="#列名和java对象名属性名称不同的解决方案" class="headerlink" title="列名和java对象名属性名称不同的解决方案"></a>列名和java对象名属性名称不同的解决方案</h2><p>①使用resultMap：自定义列名和属性名称</p>
+<p>②使用resultType：使用别名，让别名和java对象属性一样</p>
+<h2 id="Like"><a href="#Like" class="headerlink" title="Like"></a>Like</h2><p>第一种方式：在java程序中，把like内容组装好，把这个内容传入到sql语句中。</p>
+<p>dao接口</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*like的第一种方式*/</span></span><br><span class="line"><span class="function">List&lt;Student&gt; <span class="title">studentLikeOne</span><span class="params">(<span class="meta">@Param(&quot;name&quot;)</span> String name)</span></span>;</span><br></pre></td></tr></table></figure>
+
+<p>mapper文件</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--like的第一种方式--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;studentLikeOne&quot;</span> <span class="attr">resultType</span>=<span class="string">&quot;com.xienode.domain.Student&quot;</span>&gt;</span></span><br><span class="line">    select id, name , email,age from student where name like #&#123;name&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>执行like</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testLikeOne</span><span class="params">()</span></span>&#123;</span><br><span class="line">    SqlSession session = MyBatisUtil.getSqlSession();</span><br><span class="line">    StudentDao dao = session.getMapper(StudentDao.class);</span><br><span class="line"></span><br><span class="line">    String name = <span class="string">&quot;%小%&quot;</span>;</span><br><span class="line">    List&lt;Student&gt; students = dao.studentLikeOne(name);</span><br><span class="line">    students.forEach(student -&gt; System.out.println(student));</span><br><span class="line">    session.close();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>第二种方式：在sql语句中组织like的内容</p>
+<p>sql语句like的格式： where name like “%”空格#{}空格”%”</p>
+<p>dao接口</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">List&lt;Student&gt; <span class="title">studentLikeTwo</span><span class="params">(<span class="meta">@Param(&quot;name&quot;)</span> String name)</span></span>;</span><br></pre></td></tr></table></figure>
+
+<p>mapper文件</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--like的第二种方式--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;studentLikeTwo&quot;</span> <span class="attr">resultType</span>=<span class="string">&quot;com.xienode.domain.Student&quot;</span>&gt;</span></span><br><span class="line">    select id, name , email,age from student where name like &quot;%&quot; #&#123;name&#125; &quot;%&quot;</span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>执行like</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testLikeTwo</span><span class="params">()</span></span>&#123;</span><br><span class="line">    SqlSession session = MyBatisUtil.getSqlSession();</span><br><span class="line">    StudentDao dao = session.getMapper(StudentDao.class);</span><br><span class="line"></span><br><span class="line">    String name = <span class="string">&quot;小&quot;</span>;</span><br><span class="line">    List&lt;Student&gt; students = dao.studentLikeTwo(name);</span><br><span class="line">    students.forEach(student -&gt; System.out.println(student));</span><br><span class="line">    session.close();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
     </div>
 
     

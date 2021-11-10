@@ -23,20 +23,20 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","version":"8.2.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":false,"lazyload":false,"nav":null},"motion":{"enable":true,"async":true,"transition":{"post_block":"bounceln","post_header":"shake","post_body":"pulse","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
-<meta name="description" content="Spring框架是什么什么是springspring就是一个java框架，使用java语言开发的，轻量级的，开源的框架。可以在j2ee spring核心技术：IOC，AOP spring又叫做容器。spring作为容器，装的是java对象，给属性赋值。 spring作用：实现解耦合，解决java对象之间的耦合，解决模块之间的耦合。 spring的地址https:&#x2F;&#x2F;spring.io spring">
+<meta name="description" content="Spring框架是什么什么是springspring就是一个java框架，使用java语言开发的，轻量级的，开源的框架。可以在j2ee spring核心技术：IOC，AOP spring又叫做容器。spring作为容器，装的是java对象，给属性赋值。 spring作用：实现解耦合，解决java对象之间的耦合，解决模块之间的耦合。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="spring框架学习Day01">
 <meta property="og:url" content="http://example.com/spring%E6%A1%86%E6%9E%B6%E5%AD%A6%E4%B9%A0Day01.html">
 <meta property="og:site_name" content="夏步D的博客">
-<meta property="og:description" content="Spring框架是什么什么是springspring就是一个java框架，使用java语言开发的，轻量级的，开源的框架。可以在j2ee spring核心技术：IOC，AOP spring又叫做容器。spring作为容器，装的是java对象，给属性赋值。 spring作用：实现解耦合，解决java对象之间的耦合，解决模块之间的耦合。 spring的地址https:&#x2F;&#x2F;spring.io spring">
+<meta property="og:description" content="Spring框架是什么什么是springspring就是一个java框架，使用java语言开发的，轻量级的，开源的框架。可以在j2ee spring核心技术：IOC，AOP spring又叫做容器。spring作为容器，装的是java对象，给属性赋值。 spring作用：实现解耦合，解决java对象之间的耦合，解决模块之间的耦合。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="c:/Users/Dell/AppData/Roaming/Typora/typora-user-images/image-20210911120712295.png">
+<meta property="og:image" content="http://example.com/images/image-20210911120712295.png">
 <meta property="article:published_time" content="2021-10-22T09:25:43.000Z">
-<meta property="article:modified_time" content="2021-10-22T09:26:04.817Z">
+<meta property="article:modified_time" content="2021-10-22T09:37:20.253Z">
 <meta property="article:author" content="夏步D">
 <meta property="article:tag" content="Music production, Orchestration, Synthesizer, Programming, java, web">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="c:/Users/Dell/AppData/Roaming/Typora/typora-user-images/image-20210911120712295.png">
+<meta name="twitter:image" content="http://example.com/images/image-20210911120712295.png">
 
 
 <link rel="canonical" href="http://example.com/spring%E6%A1%86%E6%9E%B6%E5%AD%A6%E4%B9%A0Day01.html">
@@ -291,7 +291,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2021-10-22 17:25:43 / 修改时间：17:26:04" itemprop="dateCreated datePublished" datetime="2021-10-22T17:25:43+08:00">2021-10-22</time>
+      <time title="创建时间：2021-10-22 17:25:43 / 修改时间：17:37:20" itemprop="dateCreated datePublished" datetime="2021-10-22T17:25:43+08:00">2021-10-22</time>
     </span>
 
   
@@ -315,8 +315,12 @@
 <p>spring核心技术：IOC，AOP</p>
 <p>spring又叫做容器。spring作为容器，装的是java对象，给属性赋值。</p>
 <p>spring作用：实现解耦合，解决java对象之间的耦合，解决模块之间的耦合。</p>
+<span id="more"></span>
+
+
 <h3 id="spring的地址"><a href="#spring的地址" class="headerlink" title="spring的地址"></a>spring的地址</h3><p><a target="_blank" rel="noopener" href="https://spring.io/">https://spring.io</a></p>
-<h3 id="spring的体系结构"><a href="#spring的体系结构" class="headerlink" title="spring的体系结构"></a>spring的体系结构</h3><p><img src="C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20210911120712295.png" alt="image-20210911120712295"></p>
+<h3 id="spring的体系结构"><a href="#spring的体系结构" class="headerlink" title="spring的体系结构"></a>spring的体系结构</h3><img src="images/image-20210911120712295.png">
+
 <p>Spring 由 20 多个模块组成，它们可以分为数据访问/集成（Data Access/Integration）、Web、面向切面编程（AOP, Aspects）、提供 JVM 的代理（Instrumentation）、消息发送（Messaging）、核心容器（Core Container）和测试（Test）。</p>
 <h2 id="spring优点"><a href="#spring优点" class="headerlink" title="spring优点"></a>spring优点</h2><p>Spring 是一个框架，是一个半成品的软件。有 20 个模块组成。它是一个 容器管理对象，容器是装东西的，Spring 容器不装文本，数字。装的是对象。 Spring 是存储对象的容器。</p>
 <p> （1） 轻量 Spring 框架使用的 jar 都比较小，一般在 1M 以下或者几百 kb。Spring 核心功能的所需的 jar 总共在 3M 左右。 Spring 框架运行占用的资源少，运行效率高。不依赖其他 jar包。</p>
